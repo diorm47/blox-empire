@@ -1,0 +1,57 @@
+@import url(../../components/styles/style.css);
+
+.sidebar_wrapper {
+  padding-top: 10px;
+  width: 88px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.side_bar_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.side_bar_link_item {
+  margin: 10px 0;
+}
+.side_bar_link_item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.side_bar_link_item a p {
+  font-family: HalvarBreitschrift;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+  color: rgba(81, 83, 95, 1);
+
+  transition: all 0.3s ease;
+}
+
+.sidebar_btm_discord {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.side_bar_link_item svg * {
+  transition: all 0.3s ease;
+}
+.side_bar_link_item a:hover p {
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.3s ease;
+}
+.side_bar_link_item a:hover svg * {
+  transition: all 0.3s ease;
+  fill: #20a1ec;
+}
+.side_bar_link_item .active p {
+  color: rgba(255, 255, 255, 1);
+}
+.side_bar_link_item .active svg * {
+  fill: #20a1ec;
+}

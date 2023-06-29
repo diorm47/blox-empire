@@ -1,0 +1,67 @@
+@import url(../../components/styles/style.css);
+.home_page {
+  max-width: 1508px;
+  padding-top: 20px;
+  padding-right: 32px;
+  overflow-y: hidden;
+  margin: 0 auto;
+}
+
+.home_page_carousel {
+  height: 300px;
+  margin-top: 30px;
+}
+
+.home_page_carousel div img {
+  border-radius: 16px;
+  width: 188px;
+  height: 260px;
+}
+.home_page_carousel .slick-dots li,
+.home_page_carousel .slick-dots li button {
+  background: rgba(59, 61, 77, 1);
+  width: 32px;
+  height: 2px;
+  cursor: pointer;
+  padding: 0;
+}
+.home_page_carousel .slick-dots .slick-active button {
+  background: #20a1ec;
+}
+
+.slick-dots li button:before {
+  display: none;
+}
+.home_page_table_tabs {
+  display: flex;
+}
+.home_page_table_tabs button {
+  display: flex;
+  padding: 10px 16px;
+  border-radius: 9px;
+  color: #51535f;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  margin-right: 14px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 0.3s ease;
+}
+.home_page_table_tabs button:hover {
+  transition: all 0.3s ease;
+  color: #fff;
+  background: rgba(33, 36, 48, 1);
+}
+.active_tab_btn {
+  color: #fff !important;
+  background: rgba(33, 36, 48, 1) !important;
+}
+
+.header_table_content {
+  margin-top: 32px;
+  margin-bottom: 80px;
+}

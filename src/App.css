@@ -1,0 +1,36 @@
+.main_content {
+  display: flex;
+}
+
+.main_content_wrapper {
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  padding-left: 32px;
+  border-radius: 20px 0px 0px 0px;
+  background: #1b1d29;
+}
+.main_content_block {
+  width: 88%;
+  margin: 0 auto;
+}
+.chat_content {
+  position: relative;
+}
+.chat_button {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50%;
+  background: #20a1ec;
+  cursor: pointer;
+  box-shadow: 0px 1px 7px 0px rgba(255, 255, 255, 0.47) inset;
+}
+.chat_button svg {
+  margin: 0 auto;
+}

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: HalvarBreitschrift;
+  src: url(../../assets/fonts/HalvarBreit.woff);
+}
+.page_title h1 {
+  color: #fff;
+  font-size: 20px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
