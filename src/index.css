@@ -9,6 +9,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #141622;
 }
+body::-webkit-scrollbar {
+  background: #141622;
+
+  height: 4px;
+  width: 3px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 67%, 0.56);
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

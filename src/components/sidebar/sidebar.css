@@ -1,13 +1,18 @@
 @import url(../../components/styles/style.css);
 
 .sidebar_wrapper {
-  padding-top: 10px;
+  padding-top: 90px;
   width: 88px;
-  
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: 0;
+  z-index: 111;
 }
 .side_bar_links {
   display: flex;
@@ -54,4 +59,27 @@
 }
 .side_bar_link_item .active svg * {
   fill: #20a1ec;
+}
+
+@media only screen and (max-width: 1540px) {
+  .sidebar_wrapper {
+    height: 87vh;
+  }
+  .side_bar_link_item {
+    margin: 5px 0;
+  }
+  .side_bar_link_item a p {
+    font-family: HalvarBreitschrift;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+    color: rgba(81, 83, 95, 1);
+
+    transition: all 0.3s ease;
+  }
+  .side_bar_link_item svg {
+    width: 27px;
+    height: 27px;
+  }
 }

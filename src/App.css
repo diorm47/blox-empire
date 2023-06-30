@@ -1,26 +1,33 @@
 .main_content {
   display: flex;
+  padding-top: 80px;
 }
 
 .main_content_wrapper {
   width: 100%;
+  min-height: 90vh;
   display: flex;
   overflow-x: hidden;
+  overflow-y: scroll;
   padding-left: 32px;
+  margin-left: 90px;
   border-radius: 20px 0px 0px 0px;
   background: #1b1d29;
+  position: relative;
+
+  overflow: hidden;
 }
 .main_content_block {
-  width: 88%;
+  width: 82%;
+}
+.m_content_center {
   margin: 0 auto;
 }
-.chat_content {
-  position: relative;
-}
+
 .chat_button {
-  position: absolute;
+  position: fixed;
   right: 20px;
-  top: 17px;
+  top: 97px;
   width: 44px;
   height: 44px;
   display: flex;
@@ -33,4 +40,20 @@
 }
 .chat_button svg {
   margin: 0 auto;
+}
+@media only screen and (max-width: 1710px) {
+  .main_content_block {
+    width: 78%;
+  }
+  .m_content_center {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 1540px) {
+  .main_content_block {
+    width: 77%;
+  }
+  .m_content_center {
+    width: 85%;
+  }
 }

@@ -20,12 +20,22 @@ function HomePage() {
     slidesToShow: 7,
     slidesToScroll: 1,
     initialSlide: 0,
+    
     arrows: false,
     responsive: [
       {
-        breakpoint: 1700,
+        breakpoint: 1750,
         settings: {
           slidesToShow: 6,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1540,
+        settings: {
+          slidesToShow: 5,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
