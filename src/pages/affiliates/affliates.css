@@ -1,0 +1,50 @@
+.stat_item div p {
+  font-size: 20px;
+}
+.affiliates_page .user_game_satists {
+  margin-top: 0;
+}
+.affiliates_page .header_table_content {
+  margin-top: 0;
+}
+
+.affliated_block {
+  margin-top: 18px;
+  border-radius: 11px;
+  width: 100%;
+  padding: 11px 17px;
+  background: rgba(27, 29, 41, 1);
+}
+
+.affliated_block div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.affliated_block div input {
+  width: 90%;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  color: #fff;
+  font-size: 13px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.affliated_block div svg {
+  cursor: pointer;
+}
+
+.affiliates_page .left_profile {
+  height: 520px;
+}
+.affiliates_page .br_left p {
+  color: #fff;
+}

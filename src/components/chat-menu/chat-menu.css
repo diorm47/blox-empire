@@ -72,7 +72,7 @@
 }
 
 .chat_messages {
-  width: 90%;
+  width: 100%;
   padding: 0 20px;
 
   display: flex;
@@ -85,7 +85,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   height: 70vh;
-  padding-right: 30px;
+  padding-right: 5px;
 }
 .chat_messages_content::-webkit-scrollbar {
   background: #141622;
@@ -96,9 +96,7 @@
 .chat_messages_content::-webkit-scrollbar-thumb {
   background-color: hsla(0, 0%, 67%, 0.56);
 }
-.chat_message_input {
-  padding-right: 30px;
-}
+
 
 .chat_message_input .chat_message_input_item {
   width: 100%;
@@ -140,7 +138,7 @@
   outline: none;
 }
 .message_symbols_counter {
-  width: 110%;
+
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -157,7 +155,7 @@
 
 @media only screen and (max-width: 1710px) {
   .chat_menu_wrapper {
-    height: 86vh;
+    height: 89vh;
   }
   .chat_messages {
     height: 92%;
@@ -165,7 +163,5 @@
 }
 @media only screen and (max-width: 1540px) {
 
-  .chat_messages {
-    height: 90%;
-  }
+  
 }

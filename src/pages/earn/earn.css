@@ -1,0 +1,58 @@
+.earn_wrapper h1 {
+  margin-bottom: 8px;
+}
+.earn_header_bg {
+  background: url(../../assets/images/earn-image.png);
+  padding: 40px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 19px;
+  margin-top: 30px;
+}
+
+.earn_header_bg h2 {
+  color: #fff;
+  font-size: 28px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 12px;
+}
+
+.earn_header_bg p {
+  color: #c7acff;
+  font-size: 15px;
+}
+.earn_cards {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.earn_card_item {
+  width: 226px;
+  height: 150px;
+  border-radius: 19px;
+  background: #212430;
+  margin-bottom: 15px;
+  position: relative;
+}
+.bonus_block {
+  position: absolute;
+  padding: 5px 10px;
+  background: rgba(255, 193, 91, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  top: 13px;
+  left: 13px;
+}
+.bonus_block p {
+  margin-left: 5px;
+  color: #000;
+}

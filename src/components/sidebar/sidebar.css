@@ -35,7 +35,7 @@
   line-height: 12px;
   letter-spacing: 0em;
   color: rgba(81, 83, 95, 1);
-
+   margin-top: 10px;
   transition: all 0.3s ease;
 }
 
@@ -66,7 +66,7 @@
     height: 87vh;
   }
   .side_bar_link_item {
-    margin: 5px 0;
+    margin: 10px 0;
   }
   .side_bar_link_item a p {
     font-family: HalvarBreitschrift;

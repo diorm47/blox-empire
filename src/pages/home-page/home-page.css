@@ -1,11 +1,4 @@
 @import url(../../components/styles/style.css);
-.home_page {
-  max-width: 1508px;
-  padding-top: 20px;
-  padding-right: 32px;
-  overflow-y: hidden;
-  margin: 0 auto;
-}
 
 .home_page_carousel {
   height: 300px;
@@ -62,6 +55,10 @@
 }
 
 .header_table_content {
-  margin-top: 32px;
+  margin-top: 22px;
   margin-bottom: 80px;
+}
+
+.home_page_table {
+  margin-top: 25px;
 }

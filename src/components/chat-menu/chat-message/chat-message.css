@@ -41,6 +41,10 @@
 .chat_message_text {
   margin-top: 8px;
 }
+.chat_message_user div p {
+  margin-right: 8px;
+}
+
 .chat_message_text p {
   margin: 0;
   font-size: 13px;

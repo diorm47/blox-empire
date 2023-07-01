@@ -1,0 +1,157 @@
+.sign_in_modal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+
+  z-index: 122;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 22, 34, 0.78);
+}
+.modal_bg {
+  position: absolute;
+  z-index: 123;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.sign_in_left_img img {
+    height: 100%;
+    width: 370px;
+}
+.sign_in_wrapper {
+  z-index: 200;
+  position: relative;
+  display: flex;
+
+  border-radius: 28px;
+  background: #1b1d29;
+}
+.sign_in_right {
+  padding: 30px;
+  width: 585px;
+}
+
+.sign_in_right .page_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign_in_right .page_title h1 {
+  margin: 0;
+}
+
+.sign_in_right .page_title div {
+  cursor: pointer;
+}
+.sign_in_text {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.sign_in_text p {
+  font-size: 12.5px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #70717e;
+  line-height: 18px;
+}
+
+.sign_in_form label {
+  font-size: 12.5px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #70717e;
+  line-height: 18px;
+}
+.sign_in_form .sign_in_input {
+  padding: 18px;
+  margin-bottom: 20px;
+  margin-top: 12px;
+  background: #141622;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+}
+.sign_in_form .sign_in_input input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 12px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  width: 100%;
+  line-height: 18px;
+  color: #70717e;
+}
+.affliate_code {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.affliate_code input {
+  width: 17px;
+  height: 17px;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 1px;
+  background: #141622;
+  cursor: pointer;
+}
+
+.affliate_code p {
+  margin-left: 12px;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+
+  line-height: 18px;
+}
+
+.sign_submit_btn {
+  height: 54px;
+  border-radius: 12px;
+  background: #20a1ec;
+  box-shadow: 0px 1px 7px 0px rgba(255, 255, 255, 0.47) inset;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+
+  font-size: 12px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+
+  line-height: normal;
+  text-transform: uppercase;
+  color: #fff;
+
+  margin-bottom: 20px;
+}
+.form_terms p {
+  color: #70717e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+ 
+  font-style: normal;
+ 
+  line-height: 18px;
+}
+
+.form_terms p a {
+    text-decoration: none;
+    color: rgba(32, 161, 236, 1);
+}

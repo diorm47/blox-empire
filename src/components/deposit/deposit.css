@@ -1,0 +1,166 @@
+.deposit_modal .page_title {
+  margin-bottom: 40px;
+}
+.deposit_modal_block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+}
+.deposit_modal .sign_in_wrapper {
+  flex-direction: column;
+}
+.deposit_modal_block .deposit_modal_item {
+  width: 163px;
+  height: 183px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.deposit_modal_item img {
+  width: 105%;
+  border-radius: 12px;
+  margin: -2px;
+}
+
+.crypto_block {
+  display: flex;
+}
+
+.block_title h2 {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+.block_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.block_nav p {
+  cursor: pointer;
+}
+.block_nav_links {
+  margin-bottom: 15px;
+}
+.block_nav_links,
+.block_nav_links div {
+  display: flex;
+  align-items: center;
+}
+.block_nav_links div svg {
+  margin: 0 12px;
+}
+.block_nav_links div svg * {
+  fill: rgba(81, 83, 95, 1);
+}
+.block_nav_links p {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+
+  line-height: 18px;
+  color: #51535f;
+}
+.block_nav_links .active_link {
+  color: #20a1ec;
+}
+
+.crypto_curse h2 {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.crypto_block p {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+
+  line-height: 18px;
+  color: rgba(112, 113, 126, 1);
+}
+.crypto_curse_converter {
+  flex-direction: column;
+}
+.cripto_converter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.symbol {
+  margin: 0 15px;
+  font-size: 35px !important;
+  font-family: "Montserrat", sans-serif;
+  line-height: 18px;
+  margin-bottom: -30px;
+  margin-left: 1px;
+}
+.left_crypto_input div,
+.right_crypto_input div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  background: rgba(20, 22, 34, 1);
+  border-radius: 9px;
+  margin-top: 12px;
+  width: 292px;
+}
+.left_crypto_input input,
+.right_crypto_input input {
+  width: 100%;
+  height: 100%;
+  text-indent: 3px;
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #fff;
+  line-height: 18px;
+}
+
+.disabled_block {
+  pointer-events: none;
+  background: #212430;
+  color: #51535f;
+}
+.disabled_input_container {
+  position: relative;
+}
+.disabled_input_container svg {
+  position: absolute;
+  top: 15px;
+  left: 36.2%;
+}
+
+.circle_anima {
+  animation: 1s linear 0s normal none infinite running rotate;
+  -webkit-animation: 1s linear 0s normal none infinite running rotate;
+}
+.close_icon {
+  cursor: pointer;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

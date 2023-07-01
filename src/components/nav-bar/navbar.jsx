@@ -19,15 +19,17 @@ import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency
 import { ReactComponent as WalletIcon } from "../../assets/icons/wallet-icon.svg";
 import { ReactComponent as InventoryIcon } from "../../assets/icons/inventory-box.svg";
 
-const Navbar = () => {
+const Navbar = ({ toggleModal, toggleDeposit }) => {
   return (
     <nav>
       <div className="nav_bar_wrapper">
         <div className="nav_left_menu">
-          <div className="nav_logo">
-            <NavLogo />
-            <img src={nav_logo_text} alt="nav_logo_text" />
-          </div>
+          <NavLink to="/home">
+            <div className="nav_logo">
+              <NavLogo />
+              <img src={nav_logo_text} alt="nav_logo_text" />
+            </div>
+          </NavLink>
           <div className="nav_links">
             <div className="nav_link_item">
               <NavLink to="/home">
@@ -94,7 +96,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="nav_wallet_actions">
-              <div>
+              <div onClick={toggleDeposit}>
                 <WalletIcon />
                 <p>Deposit</p>
               </div>
@@ -103,11 +105,13 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+          <NavLink to="/profile">
+            <div className="user_profile_avatar">
+              <img src={user_avatar_img} alt="user avatar" />
+            </div>
+          </NavLink>
 
-          <div className="user_profile_avatar">
-            <img src={user_avatar_img} alt="user avatar" />
-          </div>
-          <div className="nav_profile_inventory">
+          <div className="nav_profile_inventory" onClick={toggleModal}>
             <InventoryIcon />
           </div>
         </div>

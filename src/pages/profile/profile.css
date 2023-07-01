@@ -1,0 +1,70 @@
+.profile_wrapper {
+  display: flex;
+  margin-top: 25px;
+}
+
+.left_profile {
+  width: 30%;
+  height: 590px;
+  padding: 24px;
+  padding-bottom: 0;
+  border-radius: 18px;
+  background: #141622;
+  margin-right: 30px;
+}
+.top_profile_items {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+}
+.user_name p {
+  color: #fff;
+  font-size: 14px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+.user_name_wallet {
+  margin-left: 20px;
+}
+.logout_icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+.user_conf_datas {
+  margin-top: 25px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.block_separator {
+  width: 319px;
+  height: 1px;
+  background: #1c1e2c;
+  position: absolute;
+  left: -25px;
+  margin-top: 20px;
+  bottom: 0;
+}
+.user_game_satists {
+  margin-top: 20px;
+}
+.user_game_satists .stat_item {
+  margin-bottom: 25px;
+}
+.user_game_satists .main_p_style {
+  margin-bottom: 10px;
+}
+
+.right_profile_table {
+  width: 70%;
+}
+.last_item_short {
+  width: 10%;
+}

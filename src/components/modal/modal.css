@@ -1,0 +1,35 @@
+.logout_modal h2 {
+  margin-bottom: 0 !important;
+}
+.logout_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.logout_buttons button {
+  width: 211px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.logout_buttons .no_logout {
+  margin-right: 10px;
+  background: rgba(33, 36, 48, 1);
+}
+.logout_buttons .yes_logout {
+    background: rgba(32, 161, 236, 1);
+}

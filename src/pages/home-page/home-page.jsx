@@ -53,7 +53,7 @@ function HomePage() {
     ],
   };
   return (
-    <div className="home_page">
+    <div className="home_page main_page_styles">
       <div className="home_page_wrapper">
         <div className="page_title">
           <h1>Popular game</h1>
