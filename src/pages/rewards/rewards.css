@@ -1,0 +1,109 @@
+.rolling_circle path {
+  width: 470px;
+  height: 470px;
+}
+.rewards_page {
+  width: 1088px;
+  padding-bottom: 50px;
+}
+
+.reward_score_percent {
+  color: #20a1ec;
+  text-shadow: 0px 0px 114px 0px rgba(32, 161, 236, 0.56);
+  font-size: 76px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.reward_scores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 80px;
+}
+.rolling_circle {
+  position: absolute;
+  top: -25%;
+}
+.claim_coins {
+  display: flex;
+  align-items: center;
+}
+
+.reward_scores p,
+.reward_scores div {
+  position: relative;
+  z-index: 11;
+}
+
+.claim_coins span {
+  font-size: 13px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #70717e;
+}
+.claim_coins .nav_wallet_currency {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+
+.user_scores {
+  width: 100%;
+  margin-top: 65px;
+  padding: 20px 30px;
+  background: linear-gradient(180deg, #242633 0%, rgba(36, 38, 51, 0) 100%);
+}
+
+.progress_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.progress_title p {
+  color: #fff;
+  font-size: 14px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.user_scores .sign_submit_btn {
+  margin-top: 65px;
+}
+
+.reward_bottom_texts {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom_conbert_scores {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom_conbert_scores span {
+  color: #fff;
+}
+.user_scores {
+  position: relative;
+}
+.top_gradient {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -79px;
+}
+.reward_bottom_texts p {
+    letter-spacing: -0.9px !important;
+}

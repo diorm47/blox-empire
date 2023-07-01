@@ -13,6 +13,7 @@ import Faq from "./pages/faq/faq";
 import Earn from "./pages/earn/earn";
 import Profile from "./pages/profile/profile";
 import Affilitates from "./pages/affiliates/affliates";
+import Rewards from "./pages/rewards/rewards";
 
 function App() {
   const [isMenuVisible, setMenuVisible] = useState(false);
@@ -47,6 +48,7 @@ function App() {
                 <Route path="/faq" element={<Faq />} />
                 <Route path="/earn" element={<Earn />} />
                 <Route path="/affiliates" element={<Affilitates />} />
+                <Route path="/rewards" element={<Rewards />} />
                 <Route
                   path="/profile"
                   element={<Profile toggleDeposit={toggleDeposit} />}
