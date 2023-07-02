@@ -18,6 +18,13 @@
   position: relative;
   margin-bottom: 25px;
 }
+.profile_page .profile_avatar {
+  position: relative;
+}
+.profile_page .profile_avatar svg {
+  position: absolute;
+  right: -11px;
+}
 .user_name p {
   color: #fff;
   font-size: 14px;
@@ -67,4 +74,54 @@
 }
 .last_item_short {
   width: 10%;
+}
+
+.transaction_status p {
+  color: #51535f;
+}
+
+.successfully_status p {
+  color: #65dc80 !important;
+}
+.rejected_status p {
+  color: #ff4764;
+}
+.rejected_status svg g {
+  width: 20px;
+}
+
+.profile_limiteds {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.profile_limiteds .modal_card_item {
+  width: 160px;
+  height: 220px;
+}
+.profile_limiteds .modal_card_item .main_p_style {
+  margin-bottom: 13px;
+}
+
+.profile_limiteds .modal_card_item .dflex_aicenter {
+  position: absolute;
+  border-radius: 6px;
+  background: #212430;
+  padding: 2px 10px;
+}
+.profile_limiteds .modal_card_item .dflex_aicenter svg,
+.profile_limiteds .modal_card_item .dflex_aicenter img {
+  width: 12px;
+  margin-right: 5px;
+}
+.profile_limiteds .modal_card_item .dflex_aicenter p {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 1710px) {
+  .profile_limiteds {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .profile_limiteds .modal_card_item {
+    width: 155px;
+  }
 }

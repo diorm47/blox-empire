@@ -14,10 +14,14 @@ import Earn from "./pages/earn/earn";
 import Profile from "./pages/profile/profile";
 import Affilitates from "./pages/affiliates/affliates";
 import Rewards from "./pages/rewards/rewards";
+import Inventory from "./pages/inventory/inventory";
+import Withdraw from "./pages/withdraw/withdraw";
+import WithDrawModal from "./components/withdraw-modal/withdraw-modal";
 
 function App() {
   const [isMenuVisible, setMenuVisible] = useState(false);
   const [isModalVisible, setModalVisible] = useState(false);
+  const [isWithDrawVisible, setWithDrawVisible] = useState(false);
   const [isDepositeVisible, setDepositeModalVisible] = useState(false);
   const toggleMenu = () => {
     setMenuVisible(!isMenuVisible);
@@ -28,10 +32,18 @@ function App() {
   const toggleDeposit = () => {
     setDepositeModalVisible(!isDepositeVisible);
   };
+  const toggleWithDraw = () => {
+    setWithDrawVisible(!isWithDrawVisible);
+  };
+
   return (
     <>
       <div className="main_wrapper">
-        <Navbar toggleModal={toggleModal} toggleDeposit={toggleDeposit} />
+        <Navbar
+          toggleModal={toggleModal}
+          toggleDeposit={toggleDeposit}
+          toggleWithDraw={toggleWithDraw}
+        />
         <div className="main_content">
           <Sidebar />
           <div className="main_content_wrapper">
@@ -49,6 +61,8 @@ function App() {
                 <Route path="/earn" element={<Earn />} />
                 <Route path="/affiliates" element={<Affilitates />} />
                 <Route path="/rewards" element={<Rewards />} />
+                <Route path="/inventory" element={<Inventory />} />
+                <Route path="/withdraw" element={<Withdraw />} />
                 <Route
                   path="/profile"
                   element={<Profile toggleDeposit={toggleDeposit} />}
@@ -70,6 +84,7 @@ function App() {
       </div>
       {!isModalVisible || <SignIn toggleModal={toggleModal} />}
       {!isDepositeVisible || <Deposit toggleDeposit={toggleDeposit} />}
+      {!isWithDrawVisible || <WithDrawModal toggleWithDraw={toggleWithDraw} />}
     </>
   );
 }

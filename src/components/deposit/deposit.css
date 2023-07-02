@@ -164,3 +164,136 @@
     transform: rotate(-360deg);
   }
 }
+
+.modal_input_template {
+  width: 100%;
+  padding: 18px;
+  background: #141622;
+  border: none;
+  outline: none;
+  border-radius: 9px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #fff;
+  line-height: 18px;
+}
+
+.limited_main {
+  flex-direction: column;
+}
+.modal_small_cards_template {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.modal_card_item {
+  width: 132px;
+  height: 190px;
+  padding: 11px;
+  background: #141622;
+  border-radius: 13px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.modal_card_item img {
+  margin: 0 auto;
+}
+.card_img_temp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 7px;
+}
+.modal_small_cards_template .nav_wallet_currency {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.modal_small_cards_template .nav_wallet_currency p {
+  color: #fff;
+  font-size: 13px;
+}
+.btm_shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-left: 1px solid #20a1ec;
+  border-bottom: 1px solid #20a1ec;
+
+  border-bottom-left-radius: 13px;
+}
+
+.modal_card_item button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  padding: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: #1b1d29;
+  border: none;
+  outline: none;
+
+  border-radius: 4px;
+}
+.card_item_selected_btn {
+  background: #20a1ec !important;
+}
+.card_item_selected {
+  border: 1px solid #20a1ec;
+}
+.card_item_selected .btm_shadow {
+  border: 0;
+}
+.selected_value_dep {
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.selected_cards_values p {
+  margin-bottom: 5px;
+}
+.selected_value_dep input {
+  width: 210px ;
+  margin: 0;
+}
+.limited_value_block {
+  display: flex;
+}
+.limited_value_block .limited_right_bar {
+  width: 428px;
+}
+.limited_value_block .sign_submit_btn {
+  margin-top: 12px;
+}
+
+.limited_right_bar 
+.nav_wallet_currency {
+  border-radius: 9px;
+  background: #141622;
+  padding-left: 17px;
+  margin-top: 12px;
+}
+.limited_right_bar 
+.nav_wallet_currency svg {
+  margin-right: 0;
+}
+.limited_top_text {
+  color: #FFFFFF !important;
+  margin-bottom: 13px;
+}
+.mt_12px {
+  margin-top: 12px;
+}
+.width_580px {
+  width: 580px !important;
+}

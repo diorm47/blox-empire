@@ -105,5 +105,61 @@
   top: -79px;
 }
 .reward_bottom_texts p {
-    letter-spacing: -0.9px !important;
+  letter-spacing: -0.9px !important;
+}
+.progress_precents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.progress_bar .rounded-full {
+  height: 5px;
+  border-radius: 20px;
+  width: 100%;
+  background: #141622;
+}
+.progress_bar .font-medium {
+  height: 5px;
+  background: #20a1ec;
+  border-radius: 20px;
+}
+
+.progress_percent_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.percent_vertical_line {
+  width: 2px;
+  height: 18px;
+  background: #141622;
+}
+.precent_item {
+  border-radius: 10px;
+  background: #141622;
+  width: 55px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.precent_item p {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.active_percent {
+    background: #20a1ec !important;
+}
+.reward_bg {
+    position: absolute;
+    top: 30px;
 }

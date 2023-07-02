@@ -2,6 +2,9 @@
   display: flex;
   padding-top: 80px;
 }
+a {
+  text-decoration: none;
+}
 
 .main_content_wrapper {
   width: 100%;
@@ -55,5 +58,12 @@
   }
   .m_content_center {
     width: 85%;
+  }
+  .main_page_styles {
+    padding-top: 20px !important;
+    padding-right: 20px !important;
+  }
+  .profile_wrapper, .home_page_carousel {
+    margin-top: 10px !important;
   }
 }

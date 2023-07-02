@@ -1,10 +1,20 @@
 import React from "react";
 import "./earn.css";
 
-import { ReactComponent as AdIcon } from "../../assets/images/earn-card-images/Frame 2131326758.svg";
-import { ReactComponent as WhiteIcon } from "../../assets/images/earn-card-images/white.svg";
-import { ReactComponent as BigIcon } from "../../assets/images/earn-card-images/big.svg";
+import earn_1 from "../../assets/images/earn-card-images/earn-1.jpg";
+import earn_20 from "../../assets/images/earn-card-images/earn-2.0.png";
+
+import earn_3 from "../../assets/images/earn-card-images/earn-3.jpg";
+import earn_4 from "../../assets/images/earn-card-images/earn-4.jpg";
+import earn_5 from "../../assets/images/earn-card-images/earn-5.jpg";
+import earn_6 from "../../assets/images/earn-card-images/earn-6.jpg";
+import earn_7 from "../../assets/images/earn-card-images/earn-7.jpg";
+import earn_80 from "../../assets/images/earn-card-images/earn-8.0.jpg";
+
+import earn_9 from "../../assets/images/earn-card-images/earn-9.jpg";
+
 import { ReactComponent as BonusIcon } from "../../assets/icons/bonus-icon.svg";
+import { ReactComponent as EarnHeaderbg } from "../../assets/icons/earn_bg.svg";
 
 function Earn() {
   return (
@@ -18,6 +28,7 @@ function Earn() {
           </p>
         </div>
         <div className="earn_header_bg">
+          <EarnHeaderbg />
           <h2>EARN REAL COINS</h2>
           <p className="main_p_style">
             Choose from one pf our offer wall providers below <br /> to start
@@ -26,17 +37,39 @@ function Earn() {
         </div>
         <div className="earn_cards">
           <div className="earn_card_item">
-            <WhiteIcon />
+            <img src={earn_1} alt="" />
           </div>
-          <div className="earn_card_item">
+          <div className="earn_card_item back_ground_2">
             <div className="bonus_block">
               <BonusIcon />
               <p className="main_p_style">20% bonus</p>
             </div>
-            <AdIcon />
+            <img src={earn_20} alt="" />
           </div>
           <div className="earn_card_item">
-            <BigIcon />
+            <img src={earn_3} alt="" />
+          </div>
+          <div className="earn_card_item">
+            <img src={earn_4} alt="" />
+          </div>
+          <div className="earn_card_item">
+            <img src={earn_5} alt="" />
+          </div>
+          <div className="earn_card_item">
+            <img src={earn_6} alt="" />
+          </div>
+          <div className="earn_card_item">
+            <img src={earn_7} alt="" />
+          </div>
+          <div className="earn_card_item back_ground_3">
+            <div className="bonus_block">
+              <BonusIcon />
+              <p className="main_p_style">20% bonus</p>
+            </div>
+            <img src={earn_80} alt="" />
+          </div>
+          <div className="earn_card_item">
+            <img src={earn_9} alt="" />
           </div>
         </div>
       </div>

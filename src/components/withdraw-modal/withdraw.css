@@ -1,0 +1,64 @@
+.withdraw_robux .nav_wallet_currency {
+  position: relative;
+}
+
+.withdraw_robux .nav_wallet_currency .robux_input_increments {
+  position: absolute;
+  display: flex;
+  right: 8px;
+}
+.robux_input_increments .input_increment {
+  width: 50px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 6px;
+  background: #212430;
+  margin: 0 3px;
+}
+.robux_input_increments .input_increment p {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.active_increment {
+  background: #363848 !important;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.withdraw_selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 182px;
+  height: 50px;
+  border-radius: 9px;
+  background: #212430;
+  padding: 15px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.withdraw_page .modal_input_template {
+  width: 41%;
+}
+.dropwo_menu {
+  width: 182px;
+  background: #212430;
+  padding: 15px;
+  padding-bottom: 0;
+  margin-left: 12px;
+  border-radius: 9px;
+  margin-top: 8px;
+  position: absolute;
+  z-index: 11;
+  transition: all 0.3s ease;
+}
+.dropwo_menu p {
+  padding-bottom: 12px;
+  cursor: pointer;
+}

@@ -5,6 +5,7 @@ import "../../pages/home-page/home-page.css";
 import "./profile.css";
 
 import { ReactComponent as WalletIcon } from "../../assets/icons/wallet-icon.svg";
+import { ReactComponent as Status1 } from "../../assets/icons/status-lvl-1.svg";
 
 import { ReactComponent as LogoutIcon } from "../../assets/icons/logout-icon.svg";
 import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency.svg";
@@ -14,6 +15,7 @@ import Logout from "../../components/modal/modal";
 
 function Profile({ toggleDeposit }) {
   const [isLogoutModalVisible, setLogoutModalVisible] = useState(false);
+  const [tableType, setTableType] = useState("history");
   const toggleLogoutModal = () => {
     setLogoutModalVisible(!isLogoutModalVisible);
   };
@@ -28,6 +30,7 @@ function Profile({ toggleDeposit }) {
             <div className="top_profile_items">
               <NavLink to="/profile">
                 <div className="profile_avatar">
+                  <Status1 />
                   <img src={user_avatar_img} alt="user avatar" />
                 </div>
               </NavLink>
@@ -54,9 +57,11 @@ function Profile({ toggleDeposit }) {
                   <WalletIcon />
                   <p>Deposit</p>
                 </div>
-                <div className="nav_withdraw">
-                  <p>Withdraw</p>
-                </div>
+                <NavLink to="/withdraw">
+                  <div className="nav_withdraw">
+                    <p>Withdraw</p>
+                  </div>
+                </NavLink>
               </div>
               <div className="user_conf_datas">
                 <p className="main_p_style">Registered on June 25 2022</p>
@@ -112,13 +117,42 @@ function Profile({ toggleDeposit }) {
           </div>
           <div className="right_profile_table">
             <div className="home_page_table_tabs">
-              <button className="tabel_tab_btn active_tab_btn">History</button>
-              <button className="tabel_tab_btn">Deposits</button>
-              <button className="tabel_tab_btn">Withdraws</button>
-              <button className="tabel_tab_btn">Limiteds</button>
+              <button
+                onClick={() => setTableType("history")}
+                className={
+                  tableType === "history"
+                    ? "tabel_tab_btn active_tab_btn"
+                    : "tabel_tab_btn"
+                }
+              >
+                History
+              </button>
+              <button
+                onClick={() => setTableType("deposits")}
+                className={
+                  tableType === "deposits"
+                    ? "tabel_tab_btn active_tab_btn"
+                    : "tabel_tab_btn"
+                }
+              >
+                Deposits
+              </button>
+              <NavLink to="/withdraw">
+                <button className="tabel_tab_btn">Withdraws</button>
+              </NavLink>
+              <button
+                onClick={() => setTableType("limiteds")}
+                className={
+                  tableType === "limiteds"
+                    ? "tabel_tab_btn active_tab_btn"
+                    : "tabel_tab_btn"
+                }
+              >
+                Limiteds
+              </button>
             </div>
             <div className="header_table_content">
-              <ProfileTable />
+              <ProfileTable tableType={tableType} />
             </div>
           </div>
         </div>

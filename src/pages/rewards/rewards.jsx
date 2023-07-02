@@ -1,9 +1,10 @@
 import React from "react";
 import "./rewards.css";
-
+import { Progress } from "flowbite-react";
 import { ReactComponent as CirleIcon } from "../../assets/icons/circle.svg";
 import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency.svg";
 import { ReactComponent as Gradient } from "../../assets/icons/reward_gradient.svg";
+import { ReactComponent as RewardsBG } from "../../assets/icons/reward-bg.svg";
 
 function Rewards() {
   return (
@@ -11,9 +12,10 @@ function Rewards() {
       <div className="rewards_wrapper">
         <div className="reward_scores">
           <CirleIcon className="rolling_circle" />
+          <RewardsBG  className="reward_bg"/>
           <h1 className="reward_score_percent">12%</h1>
           <div className="page_title mb_32px">
-            <h1>F.A.Q.</h1>
+            <h1>Your Rakeback</h1>
           </div>
           <div className="claim_coins">
             <span>Available to claim:</span>
@@ -30,6 +32,47 @@ function Rewards() {
           <div className="progress_title">
             <p>Your progress</p>
             <p>5.58%</p>
+          </div>
+          <div className="progress_bar">
+            <Progress progress={13} />
+            <div className="progress_precents">
+              <div className="progress_percent_item">
+                <div className="percent_vertical_line active_percent"></div>
+                <div className="precent_item active_percent">
+                  <p>5%</p>
+                </div>
+              </div>
+              <div className="progress_percent_item">
+                <div className="percent_vertical_line"></div>
+                <div className="precent_item">
+                  <p>7%</p>
+                </div>
+              </div>
+              <div className="progress_percent_item">
+                <div className="percent_vertical_line"></div>
+                <div className="precent_item">
+                  <p>10%</p>
+                </div>
+              </div>
+              <div className="progress_percent_item">
+                <div className="percent_vertical_line"></div>
+                <div className="precent_item">
+                  <p>12%</p>
+                </div>
+              </div>
+              <div className="progress_percent_item">
+                <div className="percent_vertical_line"></div>
+                <div className="precent_item">
+                  <p>14%</p>
+                </div>
+              </div>
+              <div className="progress_percent_item">
+                <div className="percent_vertical_line"></div>
+                <div className="precent_item">
+                  <p>16%</p>
+                </div>
+              </div>
+            </div>
           </div>
           <input
             type="button"

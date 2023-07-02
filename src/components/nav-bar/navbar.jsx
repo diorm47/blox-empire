@@ -19,7 +19,7 @@ import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency
 import { ReactComponent as WalletIcon } from "../../assets/icons/wallet-icon.svg";
 import { ReactComponent as InventoryIcon } from "../../assets/icons/inventory-box.svg";
 
-const Navbar = ({ toggleModal, toggleDeposit }) => {
+const Navbar = ({ toggleModal, toggleDeposit, toggleWithDraw }) => {
   return (
     <nav>
       <div className="nav_bar_wrapper">
@@ -100,20 +100,21 @@ const Navbar = ({ toggleModal, toggleDeposit }) => {
                 <WalletIcon />
                 <p>Deposit</p>
               </div>
-              <div className="nav_withdraw">
+              <div className="nav_withdraw" onClick={toggleWithDraw}>
                 <p>Withdraw</p>
               </div>
             </div>
           </div>
           <NavLink to="/profile">
-            <div className="user_profile_avatar">
+            <div className="user_profile_avatar" onClick={toggleModal}>
               <img src={user_avatar_img} alt="user avatar" />
             </div>
           </NavLink>
-
-          <div className="nav_profile_inventory" onClick={toggleModal}>
-            <InventoryIcon />
-          </div>
+          <NavLink to="/inventory">
+            <div className="nav_profile_inventory">
+              <InventoryIcon />
+            </div>
+          </NavLink>
         </div>
       </div>
     </nav>

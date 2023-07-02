@@ -1,0 +1,91 @@
+.inventory_top_actions,
+.total_inv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inventory_top_actions .modal_input_template {
+  width: 51.5%;
+}
+.m_30 {
+  margin: 0 30px;
+}
+.total_inv,
+.total_inv div {
+  margin-bottom: 0;
+}
+.total_inv .main_p_style {
+  margin-bottom: 10px;
+}
+.white {
+  color: #fff;
+  font-size: 14px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  line-height: normal;
+  margin: 0 !important;
+  margin-top: 7px;
+}
+.vetical_gray_line {
+  width: 1px;
+  height: 42px;
+  background: #272935;
+}
+
+.inventory_top_actions .affliate_code {
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.inventory_top_actions .sign_submit_btn {
+  width: 176px;
+  height: 50px;
+  margin: 0;
+}
+.inventory_blocks_wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+  margin-top: 18px;
+}
+@media only screen and (max-width: 1850px) {
+  .inventory_blocks_wrapper {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+@media only screen and (max-width: 1580px) {
+  .inventory_blocks_wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+.inventory_blocks_wrapper .modal_card_item {
+  width: 168px;
+  height: 239px;
+  padding: 13px;
+  margin-right: 0;
+}
+.inventory_blocks_wrapper .temp_text {
+  margin-bottom: 15px;
+  margin-top: 12px;
+}
+
+.sell_btn {
+  width: 55px;
+  height: 29px;
+  border-radius: 4px;
+  background: #20a1ec;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  margin-left: 23px;
+  line-height: normal;
+  color: #fff;
+}
+
+.withdraw_running .modal_card_item button {
+  background: #1b1d29 !important;
+}
