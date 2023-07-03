@@ -11,14 +11,12 @@ a {
   min-height: 90vh;
   display: flex;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding-left: 32px;
   margin-left: 90px;
   border-radius: 20px 0px 0px 0px;
   background: #1b1d29;
   position: relative;
-
-  overflow: hidden;
 }
 .main_content_block {
   width: 82%;
@@ -51,10 +49,13 @@ a {
   .m_content_center {
     width: 88%;
   }
+  .tower_page {
+    max-width: 1440px !important;
+  }
 }
 @media only screen and (max-width: 1540px) {
   .main_content_block {
-    width: 77%;
+    width: 76%;
   }
   .m_content_center {
     width: 85%;
@@ -63,7 +64,8 @@ a {
     padding-top: 20px !important;
     padding-right: 20px !important;
   }
-  .profile_wrapper, .home_page_carousel {
+  .profile_wrapper,
+  .home_page_carousel {
     margin-top: 10px !important;
   }
 }

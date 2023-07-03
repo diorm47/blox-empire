@@ -1,0 +1,64 @@
+.plinko_page .tower_wrapper {
+  background: url(../../assets/images/plinko-bg.png) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.plinko_tree {
+  width: 625px;
+  margin: 0 auto;
+}
+
+.plinko_page .tower_game_block {
+  width: 625px;
+}
+.plinko_page .tower_currency {
+  width: 435px;
+}
+.plinko_page .tower_currency input {
+  width: 100%;
+}
+.plinko_page .sign_submit_btn {
+  width: 135px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.plinko_page .input_increment {
+  width: 78px;
+}
+.plinko_numbers {
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plinko_numbers button {
+  border-radius: 12px;
+  background: #141622;
+  width: 51px;
+  height: 51px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.active_plinko_number {
+  border: 3px solid #20a1ec !important;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(32, 161, 236, 0.2) 100%
+    ),
+    #141622 !important;
+}

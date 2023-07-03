@@ -1,8 +1,8 @@
-.withdraw_robux .nav_wallet_currency {
+.withdraw_robux .nav_wallet_currency, .roulette_page .nav_wallet_currency {
   position: relative;
 }
 
-.withdraw_robux .nav_wallet_currency .robux_input_increments {
+.withdraw_robux .nav_wallet_currency .robux_input_increments, .roulette_page .robux_input_increments{
   position: absolute;
   display: flex;
   right: 8px;

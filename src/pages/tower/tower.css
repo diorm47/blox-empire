@@ -1,0 +1,176 @@
+.tower_page {
+  max-width: 1610px !important;
+  width: 100%;
+  background: #0c1728;
+  padding-top: 0;
+  padding-right: 0;
+  position: absolute;
+  left: 0;
+}
+.tower_wrapper {
+  background: url(../../assets/images/tower-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 55px;
+  padding-bottom: 1px;
+}
+.pr {
+  width: 80%;
+}
+
+.tower_card {
+  width: 150px;
+  height: 62px;
+  cursor: pointer;
+  border-radius: 12px;
+  background: #3162e8;
+  box-shadow: 0px 4px 0px 0px #0047b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 12px;
+}
+.tower_card .rs_currency_icon * {
+  fill: #fff;
+}
+.rs_currency_icon {
+  z-index: 11 !important;
+}
+.tower_card p {
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  margin-left: 10px;
+  color: #fff;
+  z-index: 11;
+}
+
+.card_bg_blur {
+  position: absolute;
+}
+.tower_top_blocks {
+  width: 480px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tower_game_block {
+  border-radius: 22px;
+  background: #212430;
+
+  padding-top: 18px;
+  overflow: hidden;
+  width: 430px;
+  margin: 50px auto 30px;
+}
+
+.tower_currency {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 54px;
+  background: #141622;
+  border-radius: 12px;
+  padding-left: 15px;
+}
+
+.tower_currency input {
+  width: 140px;
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tower_game_block .sign_submit_btn {
+  width: 183px;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.t_curr_start {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tower_game_block .active_tab_btn {
+  background: #20a1ec !important;
+}
+.tower_game_block .home_page_table_tabs {
+  padding: 4px;
+  background: #141622;
+  border-radius: 12px;
+}
+.tower_game_block .tabel_tab_btn {
+  width: 125px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input_increment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 35px;
+  border-radius: 6px;
+  background: #212430 !important;
+  cursor: pointer;
+}
+.input_increment p {
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+
+  line-height: 18px;
+  color: #70717e;
+}
+.tower_input_increments {
+  background: #1b1d29 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.t_curr_start {
+  padding: 0 18px;
+}
+.tower_wrapper .home_page_table_tabs {
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+.tower_input_increments {
+  padding: 12px 18px;
+}
+
+@media only screen and (max-width: 1710px) {
+  .tower_page {
+    max-width: 100% !important;
+  }
+}
+
+.pages_live_fee {
+  padding: 32px;
+  background: #1b1d29;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.pages_live_fee .header_table_content {
+  margin-bottom: 0;
+}
