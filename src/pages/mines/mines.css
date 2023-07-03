@@ -1,0 +1,133 @@
+.mines_page .tower_wrapper {
+  background: url(../../assets/images/mines-bg.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.mines_other_btn {
+  width: 90px !important;
+  color: #51535f !important;
+}
+
+.left_diamonds {
+  border-radius: 24px;
+  background: linear-gradient(
+    180deg,
+    rgba(39, 255, 0, 0) 0%,
+    rgba(39, 255, 0, 0) 0.01%,
+    rgba(38, 255, 0, 0.16) 100%
+  );
+  width: 190px;
+  height: 247px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.left_diamonds p {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.mb_10px {
+  margin-bottom: 10px;
+}
+.mines_block_wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+.top_game_content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.center_mines_game {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+.center_mines_game div {
+  cursor: pointer;
+}
+.right_bomb {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.16) 0%,
+    rgba(255, 0, 0, 0) 100%
+  );
+}
+.right_bomb svg {
+  margin-bottom: 22px;
+}
+.mines_block_carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mines_carousel_content {
+  display: flex;
+  align-items: center;
+  justify-content: s;
+}
+.mines_block_carousel svg {
+  cursor: pointer;
+}
+.mines_carousel_item {
+  width: 74px;
+  height: 74px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.mines_carousel_item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.mines_carousel_item p,
+.mines_carousel_item span {
+  z-index: 11;
+}
+.mines_carousel_item p {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-family: HalvarBreitschrift;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 2px;
+}
+.mines_carousel_item span {
+  font-size: 12px;
+  font-family: "Montserrar", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  color: #70717E;
+}
+.carousel_line {
+  width: 15px;
+  height: 10px;
+  background: #212430;
+  margin-left: -1.2px;
+  margin-right: -1.5px;
+}
+.colored_line {
+  background: #20A1EC;
+}
+.colored_item_3 span {
+  color: #fff;
+}

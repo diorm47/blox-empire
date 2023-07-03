@@ -11,6 +11,7 @@ import Loader from "./pages/loading/loading";
 import SignIn from "./components/sign-in/sign-in";
 import Deposit from "./components/deposit/deposit";
 
+const Mines = React.lazy(() => import("./pages/mines/mines"));
 const Roulette = React.lazy(() => import("./pages/roulette-game/roulette"));
 const Tower = React.lazy(() => import("./pages/tower/tower"));
 
@@ -73,7 +74,14 @@ function App() {
                   <Route path="/inventory" element={<Inventory />} />
                   <Route path="/withdraw" element={<Withdraw />} />
                   <Route path="/roulette" element={<Roulette />} />
-                  <Route path="/plinko" element={<Plinko />} />
+                  <Route
+                    path="/plinko"
+                    element={<Plinko isMenuVisible={isMenuVisible} />}
+                  />
+                  <Route
+                    path="/mines"
+                    element={<Mines isMenuVisible={isMenuVisible} />}
+                  />
                   <Route
                     path="/tower"
                     element={<Tower isMenuVisible={isMenuVisible} />}

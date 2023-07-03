@@ -65,9 +65,9 @@ function Sidebar() {
       </div>
       <div className="sidebar_btm_discord">
         <div className="side_bar_link_item">
-          <NavLink to="/discord">
+          <a href="#">
             <DiscordLogo />
-          </NavLink>
+          </a>
         </div>
       </div>
     </div>

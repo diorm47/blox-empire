@@ -14,10 +14,10 @@
   background-size: cover;
   padding-top: 55px;
   padding-bottom: 1px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
-.pr {
-  width: 80%;
-}
+
 
 .tower_card {
   width: 150px;
