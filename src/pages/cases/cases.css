@@ -1,0 +1,370 @@
+.cases_page .custom_page_top .sign_submit_btn {
+  width: 198px;
+  font-weight: 500;
+  font-size: 13px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 7px 0px rgba(255, 255, 255, 0.47) inset;
+}
+.cases_list {
+  margin-top: 12px;
+}
+.cases_list_item {
+  padding: 20px 0 20px 50px;
+  border-radius: 12px;
+  background: #141622;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.left_bet_scores .nav_wallet_currency p {
+  font-size: 18px;
+}
+.left_bet_scores .main_p_style {
+  margin-top: 10px;
+}
+.left_bet_scores {
+  margin-right: 6%;
+}
+.case_list_avatars div {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+.case_list_avatars p {
+  margin-left: 10px;
+}
+.case_list_avatars {
+  width: 150px;
+}
+
+.cases_equalizers_list {
+  display: flex;
+  align-items: center;
+  margin-left: 7%;
+}
+.cases_equalizers_list div {
+  position: relative;
+}
+.unboxing_block {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #17171882;
+}
+.unboxing_block button {
+  border-radius: 6px;
+  background: #ffc15b;
+  padding: 4px 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+
+  line-height: 18px;
+  color: #212430;
+}
+.gray_transparent {
+  background: transparent;
+}
+.gray_transparent .unboxing_block {
+  background: transparent;
+}
+
+.coinflip_avatar p {
+  margin: 0;
+}
+
+/* Create Case Battle */
+.left_last_button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.left_last_button div {
+  border-radius: 5px;
+  background: #212430;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 18px;
+}
+.left_last_button p {
+  color: #fff;
+  font-size: 13px;
+}
+
+.create_c_right_top {
+  display: flex;
+  align-items: center;
+}
+.player_numbers {
+  display: flex;
+  align-items: center;
+}
+.player_numbers .main_p_style {
+  margin: 0;
+
+  margin-right: 15px;
+}
+.player_numbers div {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: #292b39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.player_numbers div p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+.create_case_battle_page .vetical_gray_line {
+  height: 42px !important;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.quick_case_opening {
+  display: flex;
+  align-items: center;
+}
+.quick_case_opening .main_p_style {
+  margin: 0;
+  margin-left: 14px;
+  color: #fff;
+  margin-right: 32px;
+}
+.create_case_battle_cards {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.case_battle_card {
+  width: 188px;
+  height: 286px;
+  background: #141622;
+  border-radius: 13px;
+  position: relative;
+  margin-right: 20px;
+  padding: 12px;
+}
+
+.trash_icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  background: #181a26;
+  position: absolute;
+  right: 12px;
+}
+.equalizer_case {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+.equalizer_case img {
+  width: 130px;
+}
+.equalizer_case .main_p_style {
+  margin-top: -20px;
+}
+.equalizer_case .nav_wallet_currency {
+  margin-top: 10px;
+}
+.horizondal_gray_line {
+  background: #1b1d29;
+  height: 1px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.card_counters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.card_counters div {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #1b1d29;
+  border-radius: 4px;
+}
+.card_counters div span {
+  color: #fff;
+  font-size: 20px;
+}
+
+.card_counters p {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 0 24px;
+}
+
+.add_case_btn {
+  border-radius: 13px;
+  background: rgba(255, 193, 91, 0.05);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.add_case_btn h1 {
+  font-size: 100px;
+  font-weight: 300;
+  line-height: 70%;
+  color: #ffc15b;
+}
+.add_case_btn .main_p_style {
+  color: #ffc15b;
+  margin-top: 20px;
+}
+.modal_small_cards_template .case_battle_card {
+  width: 188px;
+  height: 225px;
+}
+.modal_small_cards_template .equalizer_case {
+  margin-top: 0;
+}
+.modal_small_cards_template .equalizer_case img {
+  margin-bottom: 30px;
+}
+.create_case_modal {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+.create_case_modal .case_battle_card {
+  margin-bottom: 20px;
+}
+.cr_c_modal_stles {
+  padding-bottom: 0;
+}
+.create_case_modal {
+  position: relative;
+}
+.create_case_modal .cc_m_gradient {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.case_added_btn {
+  position: absolute;
+  width: 204px;
+  height: 56px;
+  border-radius: 12px;
+  background: #1b1d29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -80px;
+  left: 40%;
+  cursor: pointer;
+}
+
+.case_added_btn span {
+  font-size: 40px;
+  color: #65dc80;
+  margin-right: 15px;
+  margin-top: -10px;
+}
+.case_added_btn p {
+  color: #fff;
+
+  font-family: HalvarBreitschrift;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+ 
+}

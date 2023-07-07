@@ -47,6 +47,7 @@
   padding-right: 32px;
   overflow-y: hidden;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .mb_32px {

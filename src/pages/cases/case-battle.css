@@ -1,0 +1,167 @@
+.case_battle_top_rounds {
+  display: flex;
+}
+.case_battle_top_round {
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-height: 250px;
+  padding: 10px 0 39px;
+}
+
+.cases_card_top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cases_card_bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.right_top_wrapper .cases_card_bottom {
+  left: 0;
+}
+.right_top_wrapper .cases_card_top {
+  left: 0;
+}
+.cases_battle_card {
+  width: 127px;
+  height: 185px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cases_battle_card .main_p_style {
+  margin-top: -30px;
+  margin-bottom: 10px;
+}
+.left_top_wrapper .top_profile_items {
+  margin-left: 46%;
+  margin-bottom: 50px;
+}
+
+.right_top_wrapper .top_profile_items {
+  margin-left: 22%;
+}
+
+.case_battle_wining_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.case_battle_wining {
+  width: 47%;
+}
+.top_case_battle_scores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.winning_percents div div {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.winning_percents div p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.top_case_battle_scores .main_p_style {
+  margin-bottom: 0;
+}
+.winning_percents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.win_1 div {
+  background: #ff774c;
+}
+.win_1 p {
+  color: #ff774c;
+}
+.win_1,
+.win_2,
+.win_3,
+.win_4,
+.win_5 {
+  margin: 0 9px;
+}
+
+.win_2 div {
+  background: #f03276;
+}
+.win_2 p {
+  color: #f03276;
+}
+
+.win_3 div {
+  background: #7c2edf;
+}
+.win_3 p {
+  color: #7c2edf;
+}
+.win_4 div {
+  background: #3656ff;
+}
+.win_4 p {
+  color: #3656ff;
+}
+.win_5 div {
+  background: #20a1ec;
+}
+.win_5 p {
+  color: #20a1ec;
+}
+
+.winning_percents div {
+  display: flex;
+  align-items: center;
+}
+
+.white {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+}
+.winning_content_wrapper {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding-bottom: 40px;
+}
+.winning_content_wrapper .winning_content {
+  border-radius: 16px;
+  background: #202231;
+  width: 149px;
+  height: 196px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.winning_content_wrapper .winning_content .main_p_style {
+  margin-top: -20px;
+  margin-bottom: 9px;
+}
+
+.wining_left {
+    width: 49%;
+
+}
+.wining_right {
+    width: 46%;
+}
