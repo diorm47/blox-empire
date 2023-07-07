@@ -11,11 +11,11 @@ import Loader from "./pages/loading/loading";
 import SignIn from "./components/sign-in/sign-in";
 import Deposit from "./components/deposit/deposit";
 
-
 const CreateCaseBattle = React.lazy(() =>
   import("./pages/cases/create-case-battle")
 );
 const CaseBattle = React.lazy(() => import("./pages/cases/case-battle"));
+const Upgrade = React.lazy(() => import("./pages/upgrade/upgrade"));
 const Cases = React.lazy(() => import("./pages/cases/cases"));
 const Coinflip = React.lazy(() => import("./pages/coinflip/coinflip"));
 const Mines = React.lazy(() => import("./pages/mines/mines"));
@@ -78,6 +78,7 @@ function App() {
                   <Route path="/earn" element={<Earn />} />
                   <Route path="/affiliates" element={<Affilitates />} />
                   <Route path="/rewards" element={<Rewards />} />
+                  <Route path="/upgrade" element={<Upgrade />} />
                   <Route path="/inventory" element={<Inventory />} />
                   <Route path="/withdraw" element={<Withdraw />} />
                   <Route path="/case-battle" element={<CaseBattle />} />
