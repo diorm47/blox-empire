@@ -1,0 +1,354 @@
+.crash_wrapper {
+  display: flex;
+  padding-bottom: 20px;
+}
+.left_crash_column {
+  width: 470px;
+  border-radius: 20px;
+  background: #141622;
+  padding: 15px;
+}
+.top_crash_lock {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #1b1d29;
+}
+.left_crash_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.crash_tabs {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.crash_tabs button {
+  width: 210px;
+  height: 46px;
+  border-radius: 9px;
+  border: 1px solid #1e202f;
+  color: #51535f;
+  font-family: HalvarBreitschrift;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: transparent;
+  cursor: pointer;
+}
+.active_crash_tab {
+  background: #212430 !important;
+  color: #fff !important;
+}
+.autocashout {
+  border-radius: 22px;
+  background: #212430;
+  width: 100%;
+  overflow: hidden;
+}
+.autocashout_wrapper {
+  padding: 20px;
+}
+.autocashout_wrapper .quick_case_opening .main_p_style {
+  font-size: 17px;
+}
+.cashout_score {
+  width: 148px;
+  border-radius: 8px;
+  background: #141622;
+  padding: 10px 14px;
+}
+
+.df_aic_jcsb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cashout_score p {
+  color: #fff;
+
+  font-family: HalvarBreitschrift;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.autocashout_wrapper .df_aic_jcsb:first-child {
+  margin-bottom: 15px;
+}
+.autocashout .df_aic_jcsb .nav_wallet_currency {
+  width: 238px;
+  height: 54px;
+  border-radius: 12px;
+  background: var(--background-bg-dark, #141622);
+  padding-left: 15px;
+  margin: 0;
+}
+.bet_btn {
+  color: #fff;
+  text-align: center;
+  font-family: HalvarBreitschrift;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 148px;
+  height: 54px;
+  border-radius: 12px;
+  background: var(--tint-blue, #20a1ec);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 1px 7px 0px rgba(255, 255, 255, 0.47) inset;
+}
+.autocashout .input_increment {
+  width: 75px;
+}
+.autocashout .active_inc {
+  background: #363848 !important;
+}
+
+.bets_total {
+  width: 100%;
+  border-radius: 10px;
+  background: #0f111d;
+  margin-top: 15px;
+  padding: 15px 20px;
+}
+.bets_total .total_inv {
+  display: flex;
+  align-items: center;
+}
+.bets_total .white {
+  font-size: 18px !important;
+}
+.bets_total .nav_wallet_currency {
+  margin: 0;
+  margin-top: 8px;
+}
+.bets_total .vetical_gray_line {
+  height: 45px;
+}
+.crash_players {
+  margin-top: 15px;
+}
+.crash_players_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 17px;
+  margin-bottom: 10px;
+}
+.crash_players_list_item {
+  border-radius: 12px;
+  padding: 13px 17px;
+  margin-bottom: 6px;
+  background: linear-gradient(99deg, #212330 46.29%, rgba(42, 45, 62, 0) 100%);
+}
+.player_block {
+  display: flex;
+  align-items: center;
+  width: 120px;
+}
+.player_block p {
+  color: #fff;
+  margin-left: 12px;
+  margin-right: 6px;
+}
+.crash_players_list_item {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.crash_bet_block,
+.crash_winning_block {
+  margin: 0;
+  width: 103px;
+}
+.crash_bet_block p,
+.crash_winning_block p {
+  font-size: 13px;
+}
+.crash_bet_block svg,
+.crash_winning_block svg {
+  width: 18px;
+  height: 18px;
+}
+.coeff_block {
+  width: 55px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.coeff_block p {
+  color: #fff;
+  font-family: HalvarBreitschrift;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.crash_winning_block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 128px;
+}
+
+.red_item {
+  background: linear-gradient(
+    99deg,
+    rgba(255, 52, 52, 0.08) 46.29%,
+    rgba(42, 45, 62, 0) 100%
+  );
+}
+
+.red_item .coeff_block {
+  border: 1px solid var(--tint-red, #ff4764);
+  background: rgba(255, 46, 17, 0.05);
+}
+
+.red_item .crash_winning_block svg * {
+  fill: #ff4764;
+}
+.red_item .crash_winning_block p {
+  color: #ff4764;
+}
+
+.green_item {
+  border: 1px solid var(--tint-green, #65dc80);
+  background: linear-gradient(
+    180deg,
+    rgba(101, 220, 128, 0) 0%,
+    rgba(95, 207, 122, 0.12) 100%
+  );
+}
+
+.green_item .coeff_block {
+  border: 1px solid #f4bb28;
+  background: rgba(244, 187, 40, 0.05);
+}
+
+.green_item .crash_winning_block svg * {
+  fill: #65dc80;
+}
+.green_item .crash_winning_block p {
+  color: #65dc80;
+}
+
+.empty_span {
+  font-size: 30px !important;
+  color: #51535f !important;
+}
+
+.padding_0 {
+  padding: 0 !important;
+  background: #1b1d29;
+  margin-top: 50px !important;
+}
+
+.right_crash_column {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-left: 18px;
+  position: relative;
+  height: auto;
+}
+.right_coefficient_blocks {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+.right_coefficient_blocks .coeff_block {
+  margin: 0 3px;
+}
+
+.crash_right_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.timeout_icon {
+  background: #212430;
+}
+
+.purple_coeff {
+  border: 1px solid #a728f4;
+  background: rgba(167, 40, 244, 0.05);
+}
+.orange_coeff {
+  border: 1px solid #f4bb28;
+  background: rgba(244, 187, 40, 0.05);
+}
+.blue_coeff {
+  border: 1px solid #286df4;
+  background: rgba(40, 109, 244, 0.05);
+}
+
+.right_score_crash {
+  position: absolute;
+  right: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right_bottom_time {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 50px;
+}
+.right_crash_center {
+  text-align: center;
+  margin-top: 25%;
+}
+.right_crash_center p:first-child {
+  color: var(--tint-orange-2, #ff774c);
+  text-align: center;
+  font-family: HalvarBreitschrift;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+}
+.right_crash_center p:last-child {
+  color: var(--tint-orange-2, #ff774c);
+  text-align: center;
+  font-family: HalvarBreitschrift;
+  font-size: 17px;
+  font-style: normal;
+
+  line-height: 30px;
+}
+
+.left_roblox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 50%;
+  text-align: center;
+}
+.left_robox_bg {
+  position: absolute;
+  left: 0;
+}

@@ -1,21 +1,22 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import React, { Suspense, useState } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/nav-bar/navbar";
 import Sidebar from "./components/sidebar/sidebar";
 
 import { ReactComponent as ChatIcon } from "./assets/icons/chat-icon.svg";
 import ChatMenu from "./components/chat-menu/chat-menu";
+import Deposit from "./components/deposit/deposit";
+import SignIn from "./components/sign-in/sign-in";
 import WithDrawModal from "./components/withdraw-modal/withdraw-modal";
 import Loader from "./pages/loading/loading";
-import SignIn from "./components/sign-in/sign-in";
-import Deposit from "./components/deposit/deposit";
 
 const CreateCaseBattle = React.lazy(() =>
   import("./pages/cases/create-case-battle")
 );
 const CaseBattle = React.lazy(() => import("./pages/cases/case-battle"));
 const Upgrade = React.lazy(() => import("./pages/upgrade/upgrade"));
+const Crash = React.lazy(() => import("./pages/crash/crash"));
 const Cases = React.lazy(() => import("./pages/cases/cases"));
 const Coinflip = React.lazy(() => import("./pages/coinflip/coinflip"));
 const Mines = React.lazy(() => import("./pages/mines/mines"));
@@ -78,6 +79,7 @@ function App() {
                   <Route path="/earn" element={<Earn />} />
                   <Route path="/affiliates" element={<Affilitates />} />
                   <Route path="/rewards" element={<Rewards />} />
+                  <Route path="/crash" element={<Crash />} />
                   <Route path="/upgrade" element={<Upgrade />} />
                   <Route path="/inventory" element={<Inventory />} />
                   <Route path="/withdraw" element={<Withdraw />} />

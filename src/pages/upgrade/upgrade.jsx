@@ -1,26 +1,30 @@
 import React, { useState } from "react";
-import "./upgrade.css";
-import "../cases/cases.css";
-import "../../components/deposit/deposit.css";
-import limited_1 from "../../assets/images/limited/limited-1.png";
-import limited_2 from "../../assets/images/limited/limited-2.png";
+import { ReactComponent as Btm } from "../../assets/icons/card-item-btm.svg";
+import { ReactComponent as CloseIcon } from "../../assets/icons/close-icon.svg";
+import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency.svg";
+import {
+  default as limited_1,
+  default as upgrade_img,
+} from "../../assets/images/limited/limited-1.png";
+import {
+  default as limited_2,
+  default as upgrade_img_2,
+} from "../../assets/images/limited/limited-2.png";
 import limited_3 from "../../assets/images/limited/limited-3.png";
 import limited_4 from "../../assets/images/limited/limited-4.png";
 import limited_5 from "../../assets/images/limited/limited-5.png";
 import limited_6 from "../../assets/images/limited/limited-6.png";
 import upgrade_bg from "../../assets/images/upgrade-bg.png";
-import { ReactComponent as Btm } from "../../assets/icons/card-item-btm.svg";
-import { ReactComponent as CloseIcon } from "../../assets/icons/close-icon.svg";
-import "../../components/sign-in/sign-in.css";
-import user_img from "../../assets/images/user-avatar-3.png";
-import user_img_2 from "../../assets/images/user-avatar-2.png";
-import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency.svg";
-import upgrade_img from "../../assets/images/limited/limited-1.png";
-import upgrade_img_2 from "../../assets/images/limited/limited-2.png";
 import { ReactComponent as YourLimited1 } from "../../assets/images/upgrade-images/upgrade-1.svg";
 import { ReactComponent as YourLimited2 } from "../../assets/images/upgrade-images/upgrade-2.svg";
-import { ReactComponent as YourLimited1Bg } from "../../assets/images/upgrade-images/upgrade-linear-bg.svg";
 import { ReactComponent as YourLimited2Bg } from "../../assets/images/upgrade-images/upgrade-linear-bg-2.svg";
+import { ReactComponent as YourLimited1Bg } from "../../assets/images/upgrade-images/upgrade-linear-bg.svg";
+import user_img_2 from "../../assets/images/user-avatar-2.png";
+import user_img from "../../assets/images/user-avatar-3.png";
+import "../../components/deposit/deposit.css";
+import "../../components/sign-in/sign-in.css";
+import "../cases/cases.css";
+import "./upgrade.css";
 function Upgrade() {
   const [upgradeModal, setUpgradeModal] = useState(false);
   const limited = [
@@ -263,8 +267,12 @@ function Upgrade() {
                     </div>
 
                     <div className="bottom_buttons">
-                      <button  onClick={() => setUpgradeModal(true)}>YOUR INVENTORY</button>
-                      <button  onClick={() => setUpgradeModal(true)}>blox inventory</button>
+                      <button onClick={() => setUpgradeModal(true)}>
+                        YOUR INVENTORY
+                      </button>
+                      <button onClick={() => setUpgradeModal(true)}>
+                        blox inventory
+                      </button>
                     </div>
                   </div>
                   <div className="bottom_analyze">
