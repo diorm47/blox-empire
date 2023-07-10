@@ -48,3 +48,32 @@
 .affiliates_page .br_left p {
   color: #fff;
 }
+.mob_aff_table {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .profile_wrapper {
+    flex-direction: column;
+  }
+  .affiliates_page .left_profile {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .user_game_satists {
+    border-radius: 11px;
+    background: var(--background-bg-dark-2, #1b1d29);
+    padding: 15px 20px;
+  }
+  .right_profile_table {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+  }
+  .desktop_table {
+    display: none;
+  }
+  .mob_aff_table {
+    display: block;
+  }
+}

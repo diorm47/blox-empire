@@ -23,8 +23,8 @@
 }
 
 .sign_in_left_img img {
-    height: 100%;
-    width: 370px;
+  height: 100%;
+  width: 370px;
 }
 .sign_in_wrapper {
   z-index: 200;
@@ -145,13 +145,35 @@ input[type="checkbox"]:before {
   color: #70717e;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
- 
+
   font-style: normal;
- 
+
   line-height: 18px;
 }
 
 .form_terms p a {
-    text-decoration: none;
-    color: rgba(32, 161, 236, 1);
+  text-decoration: none;
+  color: rgba(32, 161, 236, 1);
+}
+
+@media only screen and (max-width: 700px) {
+  .sign_in_left_img {
+    display: none;
+  }
+  .sign_in_right {
+    width: 100%;
+    height: 100%;
+  }
+  .sign_in_wrapper {
+    border-radius: 0 !important;
+  }
+
+  .sign_in_right {
+    padding-left: 12px;
+    padding-right: 12px;
+    z-index: 170;
+  }
+  .sign_in_modal {
+    z-index: 1700;
+  }
 }

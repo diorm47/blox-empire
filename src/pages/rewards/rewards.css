@@ -108,10 +108,10 @@
   letter-spacing: -0.9px !important;
 }
 .progress_precents {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .progress_bar .rounded-full {
@@ -127,10 +127,10 @@
 }
 
 .progress_percent_item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .percent_vertical_line {
   width: 2px;
@@ -157,9 +157,55 @@
 }
 
 .active_percent {
-    background: #20a1ec !important;
+  background: #20a1ec !important;
 }
 .reward_bg {
-    position: absolute;
-    top: 30px;
+  position: absolute;
+  top: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+  .rewards_page {
+    width: 100%;
+
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  .top_gradient {
+    top: -53px;
+  }
+  .user_scores {
+    margin-top: 15px;
+    padding: 15px 12px;
+  }
+  .progress_precents {
+    padding: 0 5px;
+  }
+  .precent_item {
+    width: auto;
+    height: auto;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .reward_bottom_texts,
+  .bottom_conbert_scores {
+    flex-direction: column;
+  }
+  .reward_bottom_texts br,
+  .bottom_conbert_scores br {
+    display: none;
+  }
+  .reward_bottom_texts {
+    padding-right: 20%;
+  }
+  .bottom_conbert_scores {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+  }
+  .bottom_conbert_scores div p {
+    margin-bottom: 4px;
+  }
+
 }

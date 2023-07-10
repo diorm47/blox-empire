@@ -235,3 +235,145 @@ nav {
   background: rgba(27, 29, 41, 1);
   margin-left: 15px;
 }
+.nav_mobile_wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: rgb(20, 22, 34);
+  z-index: 11;
+  padding-top: 75px;
+  transition: all 0.8s ease;
+
+}
+.nav_mobile_wrapper .top_profile_items {
+  position: relative;
+  padding: 20px;
+}
+.nav_mobile_wrapper .logout_icon {
+  top: 20px;
+  right: 20px;
+}
+.nav_mobile_wrapper .profile_avatar svg {
+  top: 0;
+  right: -10px;
+  position: absolute;
+}
+.nav_mobile_wrapper .profile_avatar {
+  position: relative;
+}
+.deposit_withdraw_mob {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 20px;
+  border-bottom: 1px solid  #202338;
+}
+.nav_mobile_wrapper .top_profile_items {
+  margin: 0;
+}
+.deposit_withdraw_mob button {
+  width: 160px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: var(--background-stats, #212430);
+  border: none;
+  outline: none;
+  color: var(--foreground-text-message, #70717e);
+  text-align: center;
+  font-family: HalvarBreitschrift;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.deposit_withdraw_mob button:first-child {
+  border-radius: 8px;
+  background: #20a1ec;
+  color: #fff;
+  box-shadow: 0px 1px 7px 0px rgba(255, 255, 255, 0.47) inset;
+}
+.nav_mobile_wrapper .nav_links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid  #202338;
+  height: auto;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+.nav_mobile_wrapper .nav_link_item {
+  margin: 0;
+  height: 45px;
+}
+.nav_mobile_wrapper
+.nav_slots_live {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.nav_mobile_wrapper
+.nav_slots_live
+.nav_live_casino {
+  margin: 0;
+  margin-top: 15px;
+}
+.mob_discord {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.mob_discord * {
+  fill: #70717E;
+}
+.hided_menu {
+  height: 75vh;
+  top: -150%;
+  transition: all 0.8s ease;
+
+}
+.nav_mob_bottom_line {
+  display: none;
+}
+@media only screen and (max-width: 1450px) {
+  .nav_links {
+    display: none;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .nav_volume,
+  .nav_wallet_actions {
+    display: none;
+  }
+  .nav_wallet_currency {
+    margin: 0;
+  }
+}
+.nav_profile,
+.nav_left_menu {
+  z-index: 111 !important;
+  position: relative;
+}
+@media only screen and (max-width: 540px) {
+  .nav_logo img,
+  .nav_profile_inventory {
+    display: none;
+  }
+  .nav_bar_wrapper {
+    padding-right: 18px;
+  }
+  .nav_mob_bottom_line {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff15;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 79px;
+    z-index: 111;
+    display: block;
+  }
+
+}

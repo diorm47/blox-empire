@@ -8,6 +8,7 @@ import { ReactComponent as CopyIcon } from "../../assets/icons/copy-icon.svg";
 import { ReactComponent as PenIcon } from "../../assets/icons/pen-icon.svg";
 import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency.svg";
 import AffliateTable from "../../components/affliate-table/afflite-table";
+import HeaderTable from "../../components/header-table/header-table";
 
 function Affilitates() {
   return (
@@ -65,14 +66,23 @@ function Affilitates() {
           <div className="affliated_block">
             <p className="main_p_style">Your affiliate link</p>
             <div>
-              <input disabled type="text" value="https://bloxempire.com/a/Messai23" />
+              <input
+                disabled
+                type="text"
+                value="https://bloxempire.com/a/Messai23"
+              />
               <CopyIcon />
             </div>
           </div>
         </div>
         <div className="right_profile_table">
           <div className="header_table_content">
-            <AffliateTable />
+            <div className="desktop_table">
+              <AffliateTable />
+            </div>
+            <div className="mob_aff_table">
+              <HeaderTable className="mob_aff_table" />
+            </div>
           </div>
         </div>
       </div>

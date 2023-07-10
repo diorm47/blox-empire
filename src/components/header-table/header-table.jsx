@@ -160,35 +160,93 @@ function HeaderTable() {
   ];
 
   return (
-    <table
-      className="header_table"
-      style={{ width: "100%", tableLayout: "fixed" }}
-    >
-      <thead>
-        <tr>
-          {columnTitles.map((title, id) => (
-            <th className={id === 0 ? "left_20px" : ""} key={id}>
-              {title}
-            </th>
-          ))}
-        </tr>
-      </thead>
+    <>
+      <table
+        className="header_table"
+        style={{ width: "100%", tableLayout: "fixed" }}
+      >
+        <thead>
+          <tr>
+            {columnTitles.map((title, id) => (
+              <th className={id === 0 ? "left_20px" : ""} key={id}>
+                {title}
+              </th>
+            ))}
+          </tr>
+        </thead>
 
-      <tbody>
-        {data.map((item, id) => (
-          <tr
-            key={id}
-            className={id % 2 === 0 ? "colored_tr_bg" : "not_colored"}
-          >
-            <td className="br_left">
-              {item.game.map((game, idx) => (
-                <div key={idx} className="dflex_aicenter left_20px">
-                  <game.game_icon className="mr_12px" />
-                  <p className="table_main_text_styles">{game.game_name}</p>
+        <tbody>
+          {data.map((item, id) => (
+            <tr
+              key={id}
+              className={id % 2 === 0 ? "colored_tr_bg" : "not_colored"}
+            >
+              <td className="br_left">
+                {item.game.map((game, idx) => (
+                  <div key={idx} className="dflex_aicenter left_20px">
+                    <game.game_icon className="mr_12px" />
+                    <p className="table_main_text_styles">{game.game_name}</p>
+                  </div>
+                ))}
+              </td>
+              <td>
+                {item.username.map((user, idx) => (
+                  <div key={idx} className="dflex_aicenter">
+                    <img
+                      src={user.user_avatar}
+                      className="mr_12px"
+                      alt="User Avatar"
+                    />
+                    <p className="table_main_text_styles">
+                      {user.user_full_name}
+                    </p>
+                  </div>
+                ))}
+              </td>
+              <td>
+                <p className="table_main_text_styles">{item.time}</p>
+              </td>
+              <td>
+                <div className="dflex_aicenter">
+                  <RsCurrencyLogo className="mr_12px" />
+                  <p className="table_main_text_styles">
+                    {" "}
+                    {new Intl.NumberFormat("ru-RU").format(item.bet)}
+                  </p>
                 </div>
-              ))}
-            </td>
-            <td>
+              </td>
+              <td>
+                <div className="dflex_aicenter">
+                  <p className="table_main_text_styles">
+                    {item.multiplier} <span>x</span>
+                  </p>
+                </div>
+              </td>
+
+              <td className="colored_item">
+                <div className="dflex_aicenter">
+                  <RsCurrencyLogo className="mr_12px" />
+                  <p className="table_main_text_styles">
+                    {new Intl.NumberFormat("ru-RU").format(item.payout)}
+                  </p>
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <div className="header_table_mobile">
+        {data.map((item, id) => (
+          <div
+            key={id}
+            className={
+              id % 2 === 0
+                ? "header_table_mob_items colored_tr_bg"
+                : "header_table_mob_items not_colored"
+            }
+          >
+            <div className="table_top_items">
               {item.username.map((user, idx) => (
                 <div key={idx} className="dflex_aicenter">
                   <img
@@ -201,36 +259,59 @@ function HeaderTable() {
                   </p>
                 </div>
               ))}
-            </td>
-            <td>
-              <p className="table_main_text_styles">{item.time}</p>
-            </td>
-            <td>
-              <div className="dflex_aicenter">
-                <RsCurrencyLogo className="mr_12px" />
-                <p className="table_main_text_styles">       {new Intl.NumberFormat("ru-RU").format(item.bet)}</p>
+              {item.game.map((game, idx) => (
+                <div key={idx} className="dflex_aicenter left_20px">
+                  <game.game_icon className="mr_12px" />
+                  <p className="main_p_style">{game.game_name}</p>
+                </div>
+              ))}
+            </div>
+            <div className="table_bottom_items">
+              <div className="bottom_table_item">
+                <div className="btm_item_title">
+                  <p className="main_p_style">Bet</p>
+                </div>
+                <div className="dflex_aicenter">
+                  <RsCurrencyLogo className="mr_12px" />
+                  <p className="table_main_text_styles">
+                    {new Intl.NumberFormat("ru-RU").format(item.bet)}
+                  </p>
+                </div>
               </div>
-            </td>
-            <td>
-              <div className="dflex_aicenter">
-                <p className="table_main_text_styles">
-                  {item.multiplier} <span>x</span>
-                </p>
+              <div className="bottom_table_item">
+                <div className="btm_item_title">
+                  <p className="main_p_style">Time</p>
+                </div>
+                <p className="table_main_text_styles">{item.time}</p>
               </div>
-            </td>
-
-            <td className="colored_item">
-              <div className="dflex_aicenter">
-                <RsCurrencyLogo className="mr_12px" />
-                <p className="table_main_text_styles">
-                  {new Intl.NumberFormat("ru-RU").format(item.payout)}
-                </p>
+              <div className="bottom_table_item">
+                <div className="btm_item_title">
+                  <p className="main_p_style">Multiplier</p>
+                </div>
+                <div className="dflex_aicenter">
+                  <p className="table_main_text_styles">
+                    {item.multiplier} <span>x</span>
+                  </p>
+                </div>
               </div>
-            </td>
-          </tr>
+              <div className="bottom_table_item">
+                <div className="btm_item_title">
+                  <p className="main_p_style">Payout</p>
+                </div>
+                <div className="dflex_aicenter payout_table_mob">
+                  <RsCurrencyLogo className="mr_12px" />
+                  <p className="table_main_text_styles">
+                    {new Intl.NumberFormat("ru-RU").format(item.payout)}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         ))}
-      </tbody>
-    </table>
+
+        <button className="show_more_btn">SHOW MORE</button>
+      </div>
+    </>
   );
 }
 

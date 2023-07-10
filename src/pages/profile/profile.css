@@ -125,3 +125,30 @@
     width: 155px;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .left_profile,
+  .right_profile_table {
+    width: 100%;
+  }
+  .left_profile {
+    padding: 0;
+    border-radius: 18px;
+    background: var(--background-bg-dark-2, #1b1d29);
+    padding: 20px;
+    height: auto;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .profile_wrapper {
+    flex-direction: column;
+  }
+  .user_game_satists {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .right_profile_table .header_table {
+   display: block;
+  }
+}

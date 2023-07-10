@@ -5,6 +5,10 @@ import Navbar from "./components/nav-bar/navbar";
 import Sidebar from "./components/sidebar/sidebar";
 
 import { ReactComponent as ChatIcon } from "./assets/icons/chat-icon.svg";
+import { ReactComponent as MenuIcon } from "./assets/icons/mobile-nav-icons/menu.svg";
+import { ReactComponent as HomeIcon } from "./assets/logos/nav-icons/home.svg";
+import { ReactComponent as InverntoryIcon } from "./assets/icons/mobile-nav-icons/inventory.svg";
+import { ReactComponent as ChatMobileIcon } from "./assets/icons/mobile-nav-icons/chat.svg";
 import ChatMenu from "./components/chat-menu/chat-menu";
 import Deposit from "./components/deposit/deposit";
 import SignIn from "./components/sign-in/sign-in";
@@ -36,6 +40,7 @@ const Plinko = React.lazy(() => import("./pages/plinko/plinko"));
 
 function App() {
   const [isMenuVisible, setMenuVisible] = useState(false);
+  const [isMobMenuVisible, setMobMenuVisible] = useState(false);
 
   const [isModalVisible, setModalVisible] = useState(false);
   const [isWithDrawVisible, setWithDrawVisible] = useState(false);
@@ -60,6 +65,8 @@ function App() {
           toggleModal={toggleModal}
           toggleDeposit={toggleDeposit}
           toggleWithDraw={toggleWithDraw}
+          isMobMenuVisible={isMobMenuVisible}
+        
         />
         <div className="main_content">
           <Sidebar />
@@ -126,6 +133,42 @@ function App() {
       {!isModalVisible || <SignIn toggleModal={toggleModal} />}
       {!isDepositeVisible || <Deposit toggleDeposit={toggleDeposit} />}
       {!isWithDrawVisible || <WithDrawModal toggleWithDraw={toggleWithDraw} />}
+
+      <div className="mobile_bottom_navigation">
+        <div
+          className={
+            isMobMenuVisible
+              ? "bottom_nav_item active_mob_menu"
+              : "bottom_nav_item"
+          }
+        >
+          <div
+            className="bottom_nav_item_icon"
+            onClick={() => setMobMenuVisible(!isMobMenuVisible)}
+          >
+            <MenuIcon />
+          </div>
+          <p>menu</p>
+        </div>
+        <div className="bottom_nav_item">
+          <div className="bottom_nav_item_icon mobile_home_svg">
+            <HomeIcon />
+          </div>
+          <p>HOME</p>
+        </div>
+        <div className="bottom_nav_item">
+          <div className="bottom_nav_item_icon">
+            <InverntoryIcon />
+          </div>
+          <p>inventory</p>
+        </div>
+        <div className="bottom_nav_item">
+          <div className="bottom_nav_item_icon" onClick={toggleMenu}>
+            <ChatMobileIcon />
+          </div>
+          <p>CHAT</p>
+        </div>
+      </div>
     </>
   );
 }

@@ -90,3 +90,32 @@
   background-repeat: no-repeat;
   background-image: url(../../assets/images/earn-card-images/earn-8.1.png);
 }
+
+@media only screen and (max-width: 700px) {
+  .earn_wrapper .page_title p {
+    display: none;
+  }
+  .earn_header_bg {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .earn_header_bg h2 {
+    font-size: 16px;
+  }
+  .earn_header_bg h2 p {
+    font-size: 12px;
+  }
+  .earn_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .earn_card_item {
+    width: 170px;
+    height: 113px;
+  }
+
+  .earn_page {
+    padding-right: 0 !important;
+  }
+}

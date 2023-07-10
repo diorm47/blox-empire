@@ -11,6 +11,8 @@ import limited_img from "../../assets/images/deposit-cart-images/limeted-cart.jp
 import robux_img from "../../assets/images/deposit-cart-images/robux-cart.jpg";
 import limited_1 from "../../assets/images/limited/limited-1.png";
 import { NavLink } from "react-router-dom";
+import { ReactComponent as LeftChev } from "../../assets/icons/arrow left.svg";
+
 
 function WithDrawModal({ toggleWithDraw }) {
   const [activeModalType, setActiveModalType] = useState("withdraw");
@@ -67,13 +69,20 @@ function WithDrawModal({ toggleWithDraw }) {
                   <RightChevron />
                   <p className="active_link">Robux</p>
                 </div>
+                <div className="block_title">
+                  <LeftChev
+                    className="last_page_btn"
+                    onClick={() => setActiveModalType("withdraw")}
+                  />
+                  <h2>Deposit Crypto</h2>
+                </div>
               </div>
               <div className="close_icon" onClick={toggleWithDraw}>
                 <CloseIcon />
               </div>
             </div>
             <div className="block_title crypto_curse">
-              <h2>Withdraw Robux</h2>
+              <h2 className="desktop_title">Withdraw Robux</h2>
             </div>
             <div className="deposit_modal_block crypto_block withdraw_robux limited_main">
               <div className="limited_value_block">

@@ -6,6 +6,7 @@ import { ReactComponent as RightChevron } from "../../assets/icons/arrow-left.sv
 import { ReactComponent as BtcIcon } from "../../assets/icons/btc-icon.svg";
 import { ReactComponent as LoadingIcon } from "../../assets/icons/refresh-icon.svg";
 import { ReactComponent as Btm } from "../../assets/icons/card-item-btm.svg";
+import { ReactComponent as LeftChev } from "../../assets/icons/arrow left.svg";
 
 import cart_img from "../../assets/images/deposit-cart-images/card-cart.jpg";
 import blox_img from "../../assets/images/deposit-cart-images/blox-cart.jpg";
@@ -95,7 +96,8 @@ function Deposit({ toggleDeposit }) {
         {activeModalType === "main" ? (
           <>
             <div className="page_title">
-              <h1>What would you like to deposit?</h1>
+              <h1 className="desktop_title">What would you like to deposit?</h1>
+              <h1 className="mob_title">Deposit</h1>
               <div onClick={toggleDeposit}>
                 <CloseIcon />
               </div>
@@ -145,12 +147,19 @@ function Deposit({ toggleDeposit }) {
                   <RightChevron />
                   <p className="active_link">Crypto</p>
                 </div>
+                <div className="block_title">
+                  <LeftChev
+                    className="last_page_btn"
+                    onClick={() => setActiveModalType("main")}
+                  />
+                  <h2>Deposit Crypto</h2>
+                </div>
               </div>
               <div className="close_icon" onClick={toggleDeposit}>
                 <CloseIcon />
               </div>
             </div>
-            <div className="block_title">
+            <div className="block_title desktop_title">
               <h2>Deposit Crypto</h2>
             </div>
             <div className="deposit_modal_block crypto_block">
@@ -184,12 +193,19 @@ function Deposit({ toggleDeposit }) {
                   <RightChevron />
                   <p className="active_link">Bitcoin</p>
                 </div>
+                <div className="block_title">
+                  <LeftChev
+                    className="last_page_btn"
+                    onClick={() => setActiveModalType("crypto")}
+                  />
+                  <h2>Deposit Bitcoin</h2>
+                </div>
               </div>
               <div className="close_icon" onClick={toggleDeposit}>
                 <CloseIcon />
               </div>
             </div>
-            <div className="block_title crypto_curse">
+            <div className="block_title crypto_curse desktop_title">
               <h2>Deposit Bitcoin</h2>
             </div>
             <div className="deposit_modal_block crypto_block crypto_curse_converter">
@@ -246,13 +262,20 @@ function Deposit({ toggleDeposit }) {
                   <RightChevron />
                   <p className="active_link">Limited</p>
                 </div>
+                <div className="block_title">
+                  <LeftChev
+                    className="last_page_btn"
+                    onClick={() => setActiveModalType("main")}
+                  />
+                  <h2>Deposit Limiteds</h2>
+                </div>
               </div>
               <div className="close_icon" onClick={toggleDeposit}>
                 <CloseIcon />
               </div>
             </div>
             <div className="block_title crypto_curse">
-              <h2>Deposit Limiteds</h2>
+              <h2 className="desktop_title">Deposit Limiteds</h2>
             </div>
             <div className="deposit_modal_block crypto_block limited_main">
               <input
@@ -326,13 +349,20 @@ function Deposit({ toggleDeposit }) {
                   <RightChevron />
                   <p className="active_link">Item Value</p>
                 </div>
+                <div className="block_title">
+                  <LeftChev
+                    className="last_page_btn"
+                    onClick={() => setActiveModalType("limited")}
+                  />
+                  <h2>Deposit Limiteds</h2>
+                </div>
               </div>
               <div className="close_icon" onClick={toggleDeposit}>
                 <CloseIcon />
               </div>
             </div>
             <div className="block_title crypto_curse">
-              <h2>Deposit Limiteds</h2>
+              <h2 className="desktop_title">Deposit Limiteds</h2>
             </div>
             <div className="deposit_modal_block crypto_block limited_main">
               <div className="limited_value_block">
@@ -384,13 +414,20 @@ function Deposit({ toggleDeposit }) {
                   <RightChevron />
                   <p className="active_link">Robux</p>
                 </div>
+                <div className="block_title">
+                  <LeftChev
+                    className="last_page_btn"
+                    onClick={() => setActiveModalType("main")}
+                  />
+                  <h2>Deposit Robux</h2>
+                </div>
               </div>
               <div className="close_icon" onClick={toggleDeposit}>
                 <CloseIcon />
               </div>
             </div>
             <div className="block_title crypto_curse">
-              <h2>Deposit Robux</h2>
+              <h2 className="desktop_title">Deposit Robux</h2>
             </div>
             <div className="deposit_modal_block crypto_block limited_main">
               <div className="limited_value_block">
@@ -427,13 +464,20 @@ function Deposit({ toggleDeposit }) {
                   <RightChevron />
                   <p className="active_link">Promocode</p>
                 </div>
+                <div className="block_title">
+                  <LeftChev
+                    className="last_page_btn"
+                    onClick={() => setActiveModalType("main")}
+                  />
+                  <h2>Deposit Promocode</h2>
+                </div>
               </div>
               <div className="close_icon" onClick={toggleDeposit}>
                 <CloseIcon />
               </div>
             </div>
             <div className="block_title crypto_curse">
-              <h2>Deposit Promocode</h2>
+              <h2 className="desktop_title">Deposit Promocode</h2>
             </div>
             <div className="deposit_modal_block crypto_block limited_main">
               <div className="limited_value_block">

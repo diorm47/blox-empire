@@ -128,8 +128,8 @@
 
 .disabled_block {
   pointer-events: none;
-  background: #212430;
-  color: #51535f;
+  background: #212430 !important;
+  color: #51535f !important;
 }
 .disabled_input_container {
   position: relative;
@@ -263,7 +263,7 @@
   margin-bottom: 5px;
 }
 .selected_value_dep input {
-  width: 210px ;
+  width: 210px;
   margin: 0;
 }
 .limited_value_block {
@@ -276,19 +276,17 @@
   margin-top: 12px;
 }
 
-.limited_right_bar 
-.nav_wallet_currency {
+.limited_right_bar .nav_wallet_currency {
   border-radius: 9px;
   background: #141622;
   padding-left: 17px;
   margin-top: 12px;
 }
-.limited_right_bar 
-.nav_wallet_currency svg {
+.limited_right_bar .nav_wallet_currency svg {
   margin-right: 0;
 }
 .limited_top_text {
-  color: #FFFFFF !important;
+  color: #ffffff !important;
   margin-bottom: 13px;
 }
 .mt_12px {
@@ -296,4 +294,92 @@
 }
 .width_580px {
   width: 580px !important;
+}
+.mob_title {
+  display: none;
+}
+.block_nav_links .block_title {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .modal_styles {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 100%;
+    height: 100%;
+  }
+  .deposit_modal_block {
+    grid-template-columns: repeat(2, 1fr);
+    overflow: auto;
+  }
+  .deposit_modal .page_title {
+    margin-bottom: 20px;
+  }
+  .mob_title {
+    display: block;
+  }
+  .desktop_title {
+    display: none;
+  }
+  .block_nav_links p,
+  .block_nav_links div,
+  .block_nav_links svg {
+    display: none;
+  }
+  .block_nav_links .block_title {
+    display: flex;
+  }
+  .block_nav_links .block_title .last_page_btn {
+    display: block;
+    margin-left: 0;
+  }
+  .block_nav_links .block_title h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .cripto_converter {
+    flex-direction: column;
+  }
+  .left_crypto_input,
+  .right_crypto_input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .left_crypto_input div,
+  .right_crypto_input div {
+    width: 100%;
+  }
+  .right_crypto_input {
+    margin-top: 40px;
+  }
+  .disabled_input_container svg {
+    left: 26.2%;
+  }
+  .modal_small_cards_template {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .modal_small_cards_template .modal_card_item {
+    width: 170px;
+  }
+  .limited_value_block {
+    flex-direction: column;
+  }
+  .limited_value_block .modal_card_item {
+    margin: 0 auto;
+    width: 170px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  .limited_value_block .limited_right_bar {
+    width: 100%;
+  }
+  .limited_value_block .limited_right_bar {
+    width: 100% !important;
+  }
+  .robux_input_increments div:first-child,
+  .robux_input_increments div:nth-child(2), 
+  .robux_input_increments div:nth-child(3) {
+    display: none;
+  }
 }

@@ -62,3 +62,30 @@
 .home_page_table {
   margin-top: 25px;
 }
+.header_mobile_cards {
+  display: none;
+}
+
+@media only screen and (max-width: 640px) {
+  .home_page_carousel {
+    display: none;
+  }
+  .header_mobile_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .header_mobile_cards div {
+    width: 168px;
+
+    margin-bottom: 15px;
+  }
+  .header_mobile_cards img {
+    width: 100%;
+    border-radius: 14px;
+  }
+  .main_page_styles {
+    width: 100%;
+    padding-right: 0 !important;
+  }
+}

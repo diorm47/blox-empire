@@ -20,7 +20,7 @@ function HomePage() {
     slidesToShow: 7,
     slidesToScroll: 1,
     initialSlide: 0,
-    
+
     arrows: false,
     responsive: [
       {
@@ -102,6 +102,49 @@ function HomePage() {
               </NavLink>
             </div>
           </Slider>
+        </div>
+        <div className="header_mobile_cards">
+          <div>
+            <NavLink to="/crash">
+              <img src={crash_img} alt="crash_img" />
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/mines">
+              <img src={mines_img} alt="mines_img" />
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/coinflip">
+              <img src={coinflip_img} alt="coinflip_img" />
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/cases">
+              <img src={cases_img} alt="cases_img" />
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/upgrade">
+              <img src={upgrade_img} alt="upgrade_img" />
+            </NavLink>
+          </div>
+
+          <div>
+            <NavLink to="/roulette">
+              <img src={roulette_img} alt="roulette_img" />
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/tower">
+              <img src={tower_img} alt="tower_img" />
+            </NavLink>
+          </div>
+          <div>
+            <NavLink to="/plinko">
+              <img src={plinko_img} alt="plinko_img" />
+            </NavLink>
+          </div>
         </div>
         <div className="page_title">
           <h1>Live feed</h1>
