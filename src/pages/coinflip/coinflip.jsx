@@ -681,16 +681,21 @@ function Coinflip() {
                     className="sign_submit_btn"
                     value="Create game"
                   />
-                  <div className="modal_coins">
+                  <div className="modal_coins line_d_n">
                     <img src={coin_1} alt="" />
                     <img src={coin_2} alt="" />
                   </div>
                   <div className="total_inv">
+                 
                     <div className="m_30">
                       <p className="main_p_style mb_custom">Selected color</p>
                       <p className="main_p_style orange">Orange</p>
                     </div>
-                    <div className="vetical_gray_line"></div>
+                    <div className="vetical_gray_line line_d_n"></div>
+                    <div className="modal_coins desc_dn">
+                    <img src={coin_1} alt="" />
+                    <img src={coin_2} alt="" />
+                  </div>
                     <div className="m_30">
                       <p className="main_p_style mb_custom">Item</p>
                       <p className="main_p_style white">4</p>

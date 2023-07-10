@@ -76,4 +76,14 @@
   .mob_aff_table {
     display: block;
   }
+  .mob_aff_table .header_table {
+    display: none;
+  }
+  .right_profile_table {
+    margin-top: 20px;
+  }
+  .affiliates_page .left_profile {
+    background: transparent;
+    height: auto;
+  }
 }

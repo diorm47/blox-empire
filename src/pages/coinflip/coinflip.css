@@ -225,3 +225,77 @@
   justify-content: flex-end;
   margin-bottom: 5px;
 }
+.desc_dn {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .custom_page_top {
+    flex-direction: column;
+    padding: 12px;
+  }
+  .custom_page_top .total_inv {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .custom_page_top .sign_submit_btn {
+    width: 100%;
+    height: 41px;
+  }
+  .left_coinflip_profiles {
+    display: flex;
+    flex-direction: column;
+  }
+  .coinflip_list_item {
+    flex-wrap: wrap;
+    padding: 12px;
+    border-radius: 12px;
+    background: var(--background-bg-dark-2, #1b1d29);
+  }
+  .coinflip_currencies_block {
+    margin-left: 9%;
+    margin-top: 18px;
+  }
+  .vs_block,
+  .right_cost_block {
+    display: none;
+  }
+  .left_coinflip_profiles .cpinflip_avatar_block:first-child {
+    margin-bottom: 15px;
+  }
+  .coinflip_currencies {
+    width: 100%;
+  }
+  .coinflip_page {
+    margin-right: 0;
+    padding-right: 0 !important;
+  }
+
+  .coinflip_modal .sign_in_wrapper .total_inv .m_30:first-child {
+    display: none;
+  }
+
+  .selected_value_dep {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .selected_value_dep .sign_submit_btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .line_d_n {
+    display: none;
+  }
+  .desc_dn {
+    display: flex;
+  }
+  .coinflip_modal .modal_small_cards_template .modal_card_item {
+    width: 110px;
+    margin-right: 10px;
+  }
+  .modal_gradient {
+    position: absolute;
+    bottom: -13px;
+    width: 100%;
+  }
+}

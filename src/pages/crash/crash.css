@@ -352,3 +352,84 @@
   position: absolute;
   left: 0;
 }
+
+@media only screen and (max-width: 700px) {
+  .crash_wrapper {
+    flex-direction: column-reverse;
+  }
+  .right_crash_column {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 330px;
+    border-radius: 0;
+  }
+  .left_crash_column {
+    width: 100%;
+    padding: 0;
+  }
+  .pages_live_fee {
+    background: transparent !important;
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+  }
+  .autocashout_wrapper {
+    padding: 10px;
+  }
+  .tower_input_increments .input_increment:nth-child(3) {
+    display: none;
+  }
+  .autocashout .df_aic_jcsb .nav_wallet_currency {
+    width: 190px;
+  }
+  .bet_btn {
+    width: 125px;
+  }
+  .autocashout_wrapper .quick_case_opening .main_p_style {
+    font-size: 14px;
+  }
+  .crash_tabs button {
+    width: 170px;
+  }
+  .left_crash_top {
+    display: none;
+  }
+  .right_coefficient_blocks {
+    padding: 10px;
+  }
+  .right_score_crash {
+    right: 10px;
+    justify-content: space-evenly;
+    bottom: 30px;
+    top: 25px;
+    padding-bottom: 37px;
+  }
+  .right_crash_center {
+    margin-top: 30px;
+  }
+  .right_bottom_time {
+    bottom: 10px;
+    padding: 0 10px;
+  }
+  .purple_coeff,
+  .orange_coeff {
+    display: none;
+  }
+  .right_crash_center p:first-child {
+    color: var(--tint-orange-2, #ff774c);
+    text-align: center;
+    font-family: HalvarBreitschrift;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+  }
+  .right_crash_center p:last-child {
+    color: var(--tint-orange-2, #ff774c);
+    text-align: center;
+    font-family: HalvarBreitschrift;
+    font-size: 10px;
+    font-style: normal;
+    line-height: 30px;
+  }
+}

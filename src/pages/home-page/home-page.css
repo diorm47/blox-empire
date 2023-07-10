@@ -76,7 +76,7 @@
     justify-content: space-between;
   }
   .header_mobile_cards div {
-    width: 168px;
+    width: 160px;
 
     margin-bottom: 15px;
   }
@@ -89,3 +89,4 @@
     padding-right: 0 !important;
   }
 }
+

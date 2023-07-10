@@ -116,7 +116,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 18px;
-  color: #70717E;
+  color: #70717e;
 }
 .carousel_line {
   width: 15px;
@@ -126,8 +126,58 @@
   margin-right: -1.5px;
 }
 .colored_line {
-  background: #20A1EC;
+  background: #20a1ec;
 }
 .colored_item_3 span {
   color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+  .pages_live_fee {
+    padding: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 50px;
+    border-radius: 0;
+   background: transparent;
+  }
+  .tower_game_block {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .mines_page .pages_live_fee {
+    margin-top: 0;
+    padding-top: 25px;
+  }
+  .tower_wrapper {
+    border-radius: 0;
+  }
+  .mines_block_carousel .carousel_arrows {
+    display: none;
+  }
+  .mines_block_carousel {
+    padding-left: 20px;
+  }
+  .left_diamonds,
+  .right_bomb {
+    display: none;
+  }
+  .mines_block_wrapper {
+    width: 100%;
+  }
+  .center_mines_game {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .center_mines_game div {
+    width: 60px;
+  }
+  .center_mines_game div img {
+    width: 100%;
+  }
+  .top_game_content {
+     margin-bottom: 20px;
+  }
 }
