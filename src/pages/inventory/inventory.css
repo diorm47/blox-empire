@@ -89,3 +89,34 @@
 .withdraw_running .modal_card_item button {
   background: #1b1d29 !important;
 }
+
+@media only screen and (max-width: 700px) {
+  .inventory_top_actions .modal_input_template {
+    width: 100%;
+  }
+  .inventory_top_actions .total_inv,
+  .inventory_top_actions .affliate_code,
+  .inventory_top_actions .sign_submit_btn {
+    display: none;
+  }
+  .inventory_mob .page_title {
+    margin: 0 !important;
+  }
+  .inventory_mob .block_nav {
+    margin-bottom: 25px;
+  }
+  .inv_mob {
+    display: flex;
+    flex-direction: column;
+  }
+  .inv_mob .sign_submit_btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .inv_mob .total_inv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

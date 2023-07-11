@@ -60,7 +60,7 @@
     padding-left: 0;
     padding-right: 0;
   }
-  .user_game_satists {
+ .affiliates_page .user_game_satists {
     border-radius: 11px;
     background: var(--background-bg-dark-2, #1b1d29);
     padding: 15px 20px;

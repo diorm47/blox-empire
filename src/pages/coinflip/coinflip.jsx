@@ -618,7 +618,7 @@ function Coinflip() {
         </div>
       </div>
       {!isModalActive || (
-        <div className="sign_in_modal coinflip_modal deposit_modal">
+        <div className="sign_in_modal coinflip_modal deposit_modal coinflip_modal_block">
           <div className="modal_bg" onClick={() => setActiveModal(false)}></div>
           <div className="sign_in_wrapper modal_styles">
             <div className="coinflip_modal">

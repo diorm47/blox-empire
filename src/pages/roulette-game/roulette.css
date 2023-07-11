@@ -201,7 +201,36 @@
   margin-bottom: 40px;
 }
 
-.roulette_page
-.pages_live_fee {
+.roulette_page .pages_live_fee {
   padding: 0;
+}
+@media only screen and (max-width: 700px) {
+  .top_roulette_carousel_lines div:nth-child(2n) {
+    display: none;
+  }
+ .roulette_currency {
+  width: 100%;
+  background: #1B1D29;
+ }
+ .roulette_currency * {
+  background: #1B1D29 ;
+  
+ }
+ .roulette_currency p {
+  background: transparent;
+ }
+ .roulette_bet_blocks {
+  flex-direction: column;
+  margin-bottom: 0;
+ }
+ .roulette_bet_block, .no_bets {
+  width: 100%;
+  padding: 0;
+ }
+ .no_bets {
+  width: 99%;
+ }
+ .pages_live_fee {
+  background: transparent !important;
+ }
 }

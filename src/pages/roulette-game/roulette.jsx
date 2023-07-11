@@ -48,6 +48,12 @@ function Roulette() {
           slidesToShow: 3,
         },
       },
+      {
+        breakpoint: 524,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
     ],
   };
   return (

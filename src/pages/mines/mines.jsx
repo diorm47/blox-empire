@@ -29,6 +29,22 @@ function Mines({ isMenuVisible }) {
         }
       >
         <div className="tower_wrapper">
+          <div className="mobile_top_result">
+            <div className="mobile_top_result_item left_top_mines">
+              <div>
+                <p>DIAMONDS</p>
+                <p>4</p>
+              </div>
+              <DiamondIcon />
+            </div>
+            <div className="mobile_top_result_item right_top_mines">
+              <BombIcon /> 
+              <div>
+                <p>BOMB</p>
+                <p>8</p>
+              </div>
+            </div>
+          </div>
           <div className="mines_block_wrapper">
             <div className="top_game_content">
               <div className="left_diamonds">
@@ -183,7 +199,6 @@ function Mines({ isMenuVisible }) {
                   <p>3.65x</p>
                   <span>10 hit</span>
                 </div>
-              
               </div>
               <div className="carousel_arrows">
                 <RightIcon />

@@ -233,7 +233,7 @@
   font-family: HalvarBreitschrift;
   font-size: 12px;
   font-style: normal;
-  font-weight: 700;
+  
   line-height: normal;
   text-transform: uppercase;
   cursor: pointer;
@@ -268,4 +268,102 @@
 }
 .upgrade_modal {
   z-index: 1111;
+}
+.mob_upgrade_top, .mob_bottom_analyzes {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .left_upgrade_cards {
+    display: none;
+  }
+  .top_upgrade_title h2 {
+    display: none;
+  }
+  .top_limiteds {
+    display: flex;
+    flex-direction: column;
+  }
+  .top_limiteds {
+    display: none;
+  }
+  .bottom_upgrade {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    flex-direction: column;
+  }
+  .bottom_upgrade .bottom_analyze {
+    display: none;
+  }
+  .bottom_buttons {
+    width: 100%;
+  }
+  .bottom_buttons button {
+    width: 168px;
+  }
+  .grade_scores div:nth-child(4) {
+    display: none;
+  }
+  .upgrade_rolls button {
+    width: 150px;
+  }
+  .grade_scores div {
+    width: 40px;
+  }
+  .bottom_remote_block {
+    width: 100%;
+  }
+  .upgrader_bg {
+    display: none;
+  }
+  .upgrade_page {
+    padding-right: 0 !important;
+  }
+  .mob_upgrade_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mob_upgrade_top {
+    width: 100%;
+  }
+  .mob_upgrade_top_item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120%;
+  }
+  .mob_top_item {
+    position: static;
+    z-index: 111;
+  }
+
+  .mob_upgrade_top_item .mob_top_bg,
+  .mob_upgrade_bottom_item svg {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+  } 
+  .mob_upgrade_bottom_item svg {
+    top: 200px;
+  }
+  .mob_bottom_analyzes {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mob_bottom_analyzes .bottom_analyze {
+    display: block;
+  }
+  .mob_bottom_analyzes .bottom_analyze:first-child {
+   text-align: left;
+  }
+  .mob_bottom_analyzes .bottom_analyze:last-child {
+    text-align: right;
+   }
 }

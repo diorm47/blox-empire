@@ -149,6 +149,20 @@
     grid-gap: 10px;
   }
   .right_profile_table .header_table {
-   display: block;
+    display: block;
+  }
+  .home_page_table_tabs {
+    width: 100%;
+  }
+  .home_page_table_tabs button {
+    padding: 10px 12px !important;
+    margin-right: 10px !important;
+  }
+  .logout_buttons {
+    flex-direction: column;
+  }
+  .logout_buttons button {
+    width: 100% !important;
+    margin-bottom: 10px;
   }
 }

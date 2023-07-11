@@ -1,5 +1,5 @@
 import React, { Suspense, useState } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { NavLink, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/nav-bar/navbar";
 import Sidebar from "./components/sidebar/sidebar";
@@ -14,6 +14,7 @@ import Deposit from "./components/deposit/deposit";
 import SignIn from "./components/sign-in/sign-in";
 import WithDrawModal from "./components/withdraw-modal/withdraw-modal";
 import Loader from "./pages/loading/loading";
+import InventoryMob from "./pages/inventory/inventory-mob";
 
 const CreateCaseBattle = React.lazy(() =>
   import("./pages/cases/create-case-battle")
@@ -66,7 +67,7 @@ function App() {
           toggleDeposit={toggleDeposit}
           toggleWithDraw={toggleWithDraw}
           isMobMenuVisible={isMobMenuVisible}
-        
+          setMobMenuVisible={setMobMenuVisible}
         />
         <div className="main_content">
           <Sidebar />
@@ -90,6 +91,7 @@ function App() {
                   <Route path="/upgrade" element={<Upgrade />} />
                   <Route path="/inventory" element={<Inventory />} />
                   <Route path="/withdraw" element={<Withdraw />} />
+                  <Route path="/inventory-modal" element={<InventoryMob />} />
                   <Route path="/case-battle" element={<CaseBattle />} />
                   <Route
                     path="/create-case-battle"
@@ -150,19 +152,33 @@ function App() {
           </div>
           <p>menu</p>
         </div>
-        <div className="bottom_nav_item">
-          <div className="bottom_nav_item_icon mobile_home_svg">
-            <HomeIcon />
+        <NavLink to="/home">
+          <div
+            className="bottom_nav_item"
+            onClick={() => setMobMenuVisible(false)}
+          >
+            <div className="bottom_nav_item_icon mobile_home_svg">
+              <HomeIcon />
+            </div>
+            <p>HOME</p>
           </div>
-          <p>HOME</p>
-        </div>
-        <div className="bottom_nav_item">
-          <div className="bottom_nav_item_icon">
-            <InverntoryIcon />
+        </NavLink>
+        <NavLink to="/inventory-modal">
+          <div
+            className="bottom_nav_item"
+            onClick={() => setMobMenuVisible(false)}
+          >
+            <div className="bottom_nav_item_icon">
+              <InverntoryIcon />
+            </div>
+            <p>inventory</p>
           </div>
-          <p>inventory</p>
-        </div>
-        <div className="bottom_nav_item">
+        </NavLink>
+
+        <div
+          className="bottom_nav_item"
+          onClick={() => setMobMenuVisible(false)}
+        >
           <div className="bottom_nav_item_icon" onClick={toggleMenu}>
             <ChatMobileIcon />
           </div>

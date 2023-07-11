@@ -10,6 +10,7 @@ import inventory_3 from "../../assets/images/inventory-images/inventory-3.png";
 import inventory_4 from "../../assets/images/inventory-images/inventory-4.png";
 import { ReactComponent as Btm } from "../../assets/icons/card-item-btm.svg";
 import rejected_icon from "../../assets/icons/rejected.png";
+import "./profile-table.css";
 
 function ProfileTable({ tableType }) {
   const columnTitles = ["ID", "Description", "Date & Time ", "Amount"];
@@ -186,137 +187,242 @@ function ProfileTable({ tableType }) {
   return (
     <>
       {tableType === "history" ? (
-        <table
-          className="profile_table header_table"
-          style={{ width: "100%", tableLayout: "fixed" }}
-        >
-          <thead>
-            <tr>
-              {columnTitles.map((title, id) => (
-                <th className={id === 0 ? "left_20px" : ""} key={id}>
-                  {title}
-                </th>
+        <>
+          <table
+            className="profile_table header_table mob_table"
+            style={{ width: "100%", tableLayout: "fixed" }}
+          >
+            <thead>
+              <tr>
+                {columnTitles.map((title, id) => (
+                  <th className={id === 0 ? "left_20px" : ""} key={id}>
+                    {title}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+
+            <tbody>
+              {data.map((item, id) => (
+                <tr
+                  key={id}
+                  className={id % 2 === 0 ? "colored_tr_bg" : "not_colored"}
+                >
+                  <td className="br_left">
+                    <p className="main_p_style left_20px">{item.id}</p>
+                  </td>
+                  <td>
+                    <p className="table_main_text_styles">{item.description}</p>
+                  </td>
+
+                  <td>
+                    <p className="table_main_text_styles">{item.time}</p>
+                  </td>
+
+                  <td>
+                    <div className="dflex_aicenter">
+                      <RsCurrencyLogo className="mr_12px" />
+                      <p className="table_main_text_styles">
+                        {new Intl.NumberFormat("ru-RU").format(item.amount)}
+                      </p>
+                    </div>
+                  </td>
+                </tr>
               ))}
-            </tr>
-          </thead>
-
-          <tbody>
+            </tbody>
+          </table>
+          <div className="history_mobile_table">
             {data.map((item, id) => (
-              <tr
-                key={id}
-                className={id % 2 === 0 ? "colored_tr_bg" : "not_colored"}
+              <div
+                className={
+                  id % 2 === 0
+                    ? "history_mobile_table_item mobile_table_template"
+                    : "history_mobile_table_item mobile_table_template bg_tr"
+                }
               >
-                <td className="br_left">
-                  <p className="main_p_style left_20px">{item.id}</p>
-                </td>
-                <td>
-                  <p className="table_main_text_styles">{item.description}</p>
-                </td>
-
-                <td>
+                <div>
+                  <p className="main_p_style">ID</p>
+                  <p className="main_p_style">{item.id}</p>
+                </div>
+                <div>
+                  <p className="main_p_style">Time and Date</p>
                   <p className="table_main_text_styles">{item.time}</p>
-                </td>
-
-                <td>
+                </div>
+                <div>
+                  <p className="main_p_style">Amount</p>
                   <div className="dflex_aicenter">
                     <RsCurrencyLogo className="mr_12px" />
                     <p className="table_main_text_styles">
                       {new Intl.NumberFormat("ru-RU").format(item.amount)}
                     </p>
                   </div>
-                </td>
-              </tr>
+                </div>
+                <div>
+                  <p className="main_p_style">Description</p>
+                  <p className="table_main_text_styles">{item.description}</p>
+                </div>
+              </div>
             ))}
-          </tbody>
-        </table>
+          </div>
+        </>
       ) : (
         ""
       )}
       {tableType === "deposits" ? (
-        <table
-          className="profile_table header_table"
-          style={{ width: "100%", tableLayout: "fixed" }}
-        >
-          <thead>
-            <tr>
-              {DepositsColumnTitles.map((title, id) => (
-                <th className={id === 0 ? "left_20px" : ""} key={id}>
-                  {title}
-                </th>
+        <>
+          <table
+            className="profile_table header_table mob_table"
+            style={{ width: "100%", tableLayout: "fixed" }}
+          >
+            <thead>
+              <tr>
+                {DepositsColumnTitles.map((title, id) => (
+                  <th className={id === 0 ? "left_20px" : ""} key={id}>
+                    {title}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+
+            <tbody>
+              {depositsdata.map((item, id) => (
+                <tr
+                  key={id}
+                  className={id % 2 === 0 ? "colored_tr_bg" : "not_colored"}
+                >
+                  <td className="br_left">
+                    <p className="main_p_style left_20px">{item.id}</p>
+                  </td>
+                  <td>
+                    <p className="table_main_text_styles">{item.description}</p>
+                  </td>
+
+                  <td>
+                    <p className="table_main_text_styles">{item.time}</p>
+                  </td>
+
+                  <td>
+                    <div className="dflex_aicenter">
+                      <RsCurrencyLogo className="mr_12px" />
+                      <p className="table_main_text_styles">
+                        {new Intl.NumberFormat("ru-RU").format(item.amount)}
+                      </p>
+                    </div>
+                  </td>
+                  {item.deposit_status === "Transaction" ? (
+                    <td>
+                      <div className="dflex_aicenter transaction_status">
+                        <LoadingIcon className="mr_12px" />
+                        <p className="table_main_text_styles">
+                          {item.deposit_status}
+                        </p>
+                      </div>
+                    </td>
+                  ) : (
+                    ""
+                  )}
+                  {item.deposit_status === "Successfully" ? (
+                    <td>
+                      <div className="dflex_aicenter successfully_status">
+                        <CheckedIcon className="mr_12px" />
+                        <p className="table_main_text_styles">
+                          {item.deposit_status}
+                        </p>
+                      </div>
+                    </td>
+                  ) : (
+                    ""
+                  )}
+                  {item.deposit_status === "Rejected" ? (
+                    <td>
+                      <div className="dflex_aicenter rejected_status">
+                        <img
+                          src={rejected_icon}
+                          alt="rejected icon"
+                          className="mr_12px"
+                        />
+
+                        <p className="table_main_text_styles">
+                          {item.deposit_status}
+                        </p>
+                      </div>
+                    </td>
+                  ) : (
+                    ""
+                  )}
+                </tr>
               ))}
-            </tr>
-          </thead>
-
-          <tbody>
+            </tbody>
+          </table>
+          <div className="history_mobile_table">
             {depositsdata.map((item, id) => (
-              <tr
-                key={id}
-                className={id % 2 === 0 ? "colored_tr_bg" : "not_colored"}
+              <div
+                className={
+                  id % 2 === 0
+                    ? "history_mobile_table_item mobile_table_template"
+                    : "history_mobile_table_item mobile_table_template bg_tr"
+                }
               >
-                <td className="br_left">
-                  <p className="main_p_style left_20px">{item.id}</p>
-                </td>
-                <td>
-                  <p className="table_main_text_styles">{item.description}</p>
-                </td>
-
-                <td>
+                <div>
+                  <p className="main_p_style">ID</p>
+                  <p className="main_p_style">{item.id}</p>
+                </div>
+                <div>
+                  <p className="main_p_style">Time and Date</p>
                   <p className="table_main_text_styles">{item.time}</p>
-                </td>
-
-                <td>
+                </div>
+                <div>
+                  <p className="main_p_style">Amount</p>
                   <div className="dflex_aicenter">
                     <RsCurrencyLogo className="mr_12px" />
                     <p className="table_main_text_styles">
                       {new Intl.NumberFormat("ru-RU").format(item.amount)}
                     </p>
                   </div>
-                </td>
+                </div>
+                <div>
+                  <p className="main_p_style">Replenish</p>
+                  <p className="table_main_text_styles">{item.description}</p>
+                </div>
                 {item.deposit_status === "Transaction" ? (
-                  <td>
-                    <div className="dflex_aicenter transaction_status">
-                      <LoadingIcon className="mr_12px" />
-                      <p className="table_main_text_styles">
-                        {item.deposit_status}
-                      </p>
-                    </div>
-                  </td>
+                  <div className="dflex_aicenter transaction_status mobile_status">
+                    <LoadingIcon className="mr_12px" />
+                    <p className="table_main_text_styles">
+                      {item.deposit_status}
+                    </p>
+                  </div>
                 ) : (
                   ""
                 )}
                 {item.deposit_status === "Successfully" ? (
-                  <td>
-                    <div className="dflex_aicenter successfully_status">
-                      <CheckedIcon className="mr_12px" />
-                      <p className="table_main_text_styles">
-                        {item.deposit_status}
-                      </p>
-                    </div>
-                  </td>
+                  <div className="dflex_aicenter successfully_status mobile_status">
+                    <CheckedIcon className="mr_12px" />
+                    <p className="table_main_text_styles">
+                      {item.deposit_status}
+                    </p>
+                  </div>
                 ) : (
                   ""
                 )}
                 {item.deposit_status === "Rejected" ? (
-                  <td>
-                    <div className="dflex_aicenter rejected_status">
-                      <img
-                        src={rejected_icon}
-                        alt="rejected icon"
-                        className="mr_12px"
-                      />
+                  <div className="dflex_aicenter rejected_status mobile_status">
+                    <img
+                      src={rejected_icon}
+                      alt="rejected icon"
+                      className="mr_12px"
+                    />
 
-                      <p className="table_main_text_styles">
-                        {item.deposit_status}
-                      </p>
-                    </div>
-                  </td>
+                    <p className="table_main_text_styles">
+                      {item.deposit_status}
+                    </p>
+                  </div>
                 ) : (
                   ""
                 )}
-              </tr>
+              </div>
             ))}
-          </tbody>
-        </table>
+          </div>
+        </>
       ) : (
         ""
       )}

@@ -1,0 +1,47 @@
+.history_mobile_table {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .history_mobile_table {
+  display: block;
+  }
+  .mob_table {
+    display: none !important;
+  }
+  .profile_limiteds {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profile_limiteds .modal_card_item {
+    border-radius: 13px;
+    background: var(--background-bg-dark-2, #1b1d29);
+    margin-right: 0;
+  }
+  .history_mobile_table_item {
+    border-radius: 12px;
+    background: var(--background-stats, #212430);
+    padding: 12px 18px;
+    padding-bottom: 0;
+  }
+  .mobile_table_template {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .mobile_table_template div {
+    width: 140px;
+    margin-bottom: 15px;
+  }
+  .mobile_table_template .dflex_aicenter {
+    margin-bottom: 0;
+  }
+  .bg_tr {
+    background: transparent;
+  }
+  .mobile_status {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin: 0;
+    width: auto !important;
+  }
+}

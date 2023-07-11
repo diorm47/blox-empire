@@ -381,9 +381,9 @@
   .limited_value_block .limited_right_bar {
     width: 100% !important;
   }
-  .robux_input_increments div:first-child,
-  .robux_input_increments div:nth-child(2), 
-  .robux_input_increments div:nth-child(3) {
+ .deposit_modal_block .robux_input_increments div:first-child,
+ .deposit_modal_block .robux_input_increments div:nth-child(2), 
+ .deposit_modal_block .robux_input_increments div:nth-child(3) {
     display: none;
   }
 }

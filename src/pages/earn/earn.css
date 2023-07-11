@@ -118,4 +118,7 @@
   .earn_page {
     padding-right: 0 !important;
   }
+  .earn_wrapper h1 {
+    margin-bottom: 0;
+}
 }

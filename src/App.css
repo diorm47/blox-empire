@@ -114,6 +114,9 @@ a {
     margin-top: 10px !important;
   }
 }
+.main_page_styles .page_title svg {
+  display: none;
+}
 
 @media only screen and (max-width: 700px) {
   .main_content_wrapper {
@@ -142,9 +145,7 @@ a {
   .chat_menu_wrapper {
     width: 100% !important;
   }
-  .chat_menu_top {
-    display: none !important;
-  }
+
   .chat_messages {
     margin-top: 0;
     height: 97% !important;
@@ -153,9 +154,27 @@ a {
     right: 0 !important;
     z-index: 1111 !important;
     position: fixed;
-
   }
-.mobile_bottom_navigation {
-  display: flex;
-}
+  .mobile_bottom_navigation {
+    display: flex;
+  }
+  .chat_right_chevron {
+    margin-left: 2px !important;
+  }
+  .menu-container,
+  .menu-container.visible {
+    transition: right 0.6s ease-in-out !important;
+  }
+  .main_page_styles .page_title svg {
+    display: block;
+    margin-right: 15px;
+  }
+  .main_page_styles .page_title {
+    display: flex !important;
+    align-items: center;
+  }
+  .chat_messages {
+    
+    padding: 0 12px !important;
+  }
 }

@@ -163,8 +163,16 @@
   position: absolute;
   top: 30px;
 }
+.rewards_page .page_title {
+  display: none;
+}
 
 @media only screen and (max-width: 700px) {
+  .rewards_page .page_title {
+    display: flex;
+    z-index: 111;
+    position: relative;
+  }
   .rewards_page {
     width: 100%;
 
@@ -207,5 +215,4 @@
   .bottom_conbert_scores div p {
     margin-bottom: 4px;
   }
-
 }

@@ -6,7 +6,8 @@ import "./profile.css";
 
 import { ReactComponent as WalletIcon } from "../../assets/icons/wallet-icon.svg";
 import { ReactComponent as Status1 } from "../../assets/icons/status-lvl-1.svg";
-
+import { useNavigate } from "react-router-dom";
+import { ReactComponent as LeftIcon } from "../../assets/icons/arrow left.svg";
 import { ReactComponent as LogoutIcon } from "../../assets/icons/logout-icon.svg";
 import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency.svg";
 import user_avatar_img from "../../assets/images/user-avatar.png";
@@ -19,10 +20,18 @@ function Profile({ toggleDeposit }) {
   const toggleLogoutModal = () => {
     setLogoutModalVisible(!isLogoutModalVisible);
   };
+
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <>
       <div className="profile_page main_page_styles">
         <div className="page_title">
+        <LeftIcon onClick={goBack}/>
           <h1>Profile</h1>
         </div>
         <div className="profile_wrapper">

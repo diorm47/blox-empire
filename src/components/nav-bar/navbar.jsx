@@ -28,6 +28,7 @@ const Navbar = ({
   toggleDeposit,
   toggleWithDraw,
   isMobMenuVisible,
+  setMobMenuVisible
 }) => {
   return (
     <nav>
@@ -127,13 +128,14 @@ const Navbar = ({
         </div>
         <div className="nav_mob_bottom_line"></div>
         <div
+        onClick={() => setMobMenuVisible(!isMobMenuVisible)}
           className={
             isMobMenuVisible
               ? "nav_mobile_wrapper"
               : "nav_mobile_wrapper hided_menu"
           }
         >
-          <div className="top_profile_items">
+          <div className="top_profile_items" >
             <NavLink to="/profile">
               <div className="profile_avatar">
                 <Status1 />

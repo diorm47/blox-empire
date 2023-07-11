@@ -8,11 +8,20 @@ import {
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import "react-accessible-accordion/dist/fancy-example.css";
+
+import { useNavigate } from "react-router-dom";
+import { ReactComponent as LeftIcon } from "../../assets/icons/arrow left.svg";
 function Faq() {
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate(-1);
+  };
   return (
     <div className="faq_page main_page_styles">
       <div className="faq_wrapper">
         <div className="page_title mb_32px">
+        <LeftIcon onClick={goBack}/>
           <h1>F.A.Q.</h1>
         </div>
         <div className="faq_tabs">

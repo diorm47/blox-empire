@@ -6,13 +6,25 @@ import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency
 import { ReactComponent as Gradient } from "../../assets/icons/reward_gradient.svg";
 import { ReactComponent as RewardsBG } from "../../assets/icons/reward-bg.svg";
 
+import { useNavigate } from "react-router-dom";
+import { ReactComponent as LeftIcon } from "../../assets/icons/arrow left.svg";
 function Rewards() {
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="rewards_page main_page_styles">
+      <div className="page_title" onClick={goBack}>
+        <LeftIcon />
+        <h1>Rewards</h1>
+      </div>
       <div className="rewards_wrapper">
         <div className="reward_scores">
           <CirleIcon className="rolling_circle" />
-          <RewardsBG  className="reward_bg"/>
+          <RewardsBG className="reward_bg" />
           <h1 className="reward_score_percent">12%</h1>
           <div className="page_title mb_32px">
             <h1>Your Rakeback</h1>

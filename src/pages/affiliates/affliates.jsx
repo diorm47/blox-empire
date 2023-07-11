@@ -4,6 +4,9 @@ import "../../pages/home-page/home-page.css";
 import "../profile/profile.css";
 import "./affliates.css";
 
+import { useNavigate } from "react-router-dom";
+import { ReactComponent as LeftIcon } from "../../assets/icons/arrow left.svg";
+
 import { ReactComponent as CopyIcon } from "../../assets/icons/copy-icon.svg";
 import { ReactComponent as PenIcon } from "../../assets/icons/pen-icon.svg";
 import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency.svg";
@@ -11,9 +14,16 @@ import AffliateTable from "../../components/affliate-table/afflite-table";
 import HeaderTable from "../../components/header-table/header-table";
 
 function Affilitates() {
+  const navigate = useNavigate();
+
+  const goBack = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="profile_page main_page_styles affiliates_page">
-      <div className="page_title">
+      <div className="page_title" >
+        <LeftIcon onClick={goBack}/>
         <h1>Affiliates</h1>
       </div>
       <div className="profile_wrapper">

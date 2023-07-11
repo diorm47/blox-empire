@@ -396,6 +396,7 @@
   }
   .right_coefficient_blocks {
     padding: 10px;
+    justify-content: space-between;
   }
   .right_score_crash {
     right: 10px;

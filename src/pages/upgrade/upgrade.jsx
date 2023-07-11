@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ReactComponent as Btm } from "../../assets/icons/card-item-btm.svg";
+import { ReactComponent as MobTopBG } from "../../assets/icons/mob-upgrade-top-bg.svg";
 import { ReactComponent as CloseIcon } from "../../assets/icons/close-icon.svg";
 import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency.svg";
 import {
@@ -16,6 +17,8 @@ import limited_5 from "../../assets/images/limited/limited-5.png";
 import limited_6 from "../../assets/images/limited/limited-6.png";
 import upgrade_bg from "../../assets/images/upgrade-bg.png";
 import { ReactComponent as YourLimited1 } from "../../assets/images/upgrade-images/upgrade-1.svg";
+import { ReactComponent as MobTop } from "./mobile_upgrade_top.svg";
+import { ReactComponent as MobBottom } from "./mobile_upgrade_bottom.svg";
 import { ReactComponent as YourLimited2 } from "../../assets/images/upgrade-images/upgrade-2.svg";
 import { ReactComponent as YourLimited2Bg } from "../../assets/images/upgrade-images/upgrade-linear-bg-2.svg";
 import { ReactComponent as YourLimited1Bg } from "../../assets/images/upgrade-images/upgrade-linear-bg.svg";
@@ -212,6 +215,16 @@ function Upgrade() {
                 </div>
               </div>
               <div className="right_upgrade_main">
+                <div className="mob_upgrade_top">
+                  <div className="mob_upgrade_top_item">
+                    <MobTopBG className="mob_top_bg" />
+                    <MobTop className="mob_top_item" />
+                  </div>
+                  <div className="mob_upgrade_bottom_item">
+                    <MobBottom />
+                  </div>
+                </div>
+
                 <div className="top_limiteds">
                   <div>
                     <YourLimited1 />
@@ -223,6 +236,17 @@ function Upgrade() {
                   </div>
                 </div>
                 <div className="bottom_upgrade">
+                  <div className="mob_bottom_analyzes">
+                    <div className="bottom_analyze">
+                      <p className="bottom_upgrade_title">Win chance</p>
+                      <p className="bottom_top_percent">45.00%</p>
+                      <p className="bottom_upgrade_percent">+1.50%</p>
+                    </div>
+                    <div className="bottom_analyze">
+                      <p className="bottom_upgrade_title">multiplier</p>
+                      <p className="bottom_top_percent">5.00x</p>
+                    </div>
+                  </div>
                   <div className="bottom_analyze">
                     <p className="bottom_upgrade_title">Win chance</p>
                     <p className="bottom_top_percent">45.00%</p>

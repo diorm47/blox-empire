@@ -366,5 +366,83 @@ input:checked + .slider:before {
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
- 
+}
+
+@media only screen and (max-width: 700px) {
+  .custom_page_top .sign_submit_btn {
+    width: 100% !important;
+  }
+  .custom_page_top a {
+    width: 100%;
+  }
+  .cases_list_item {
+    width: 100%;
+    padding: 18px;
+    flex-wrap: wrap;
+    background: #1b1d29;
+    margin-bottom: 12px;
+  }
+
+  .cases_equalizers_list {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+  .cases_page,
+  .create_case_battle_page {
+    width: 100%;
+    padding-right: 0 !important;
+  }
+  .cases_equalizers_list img {
+    width: 100px;
+  }
+  .create_case_battle_cards {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .create_case_battle_cards .case_battle_card {
+    background: #1b1d29;
+    width: 170px;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+  .card_counters div {
+    background: #242737;
+  }
+  .create_c_right_top {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .create_c_right_top .quick_case_opening {
+    width: 106px;
+    display: none;
+  }
+  .create_c_right_top .vetical_gray_line {
+    display: none;
+  }
+  .create_c_right_top .player_numbers {
+    width: 100%;
+    display: flex;
+
+    margin: 12px 0;
+  }
+  .create_c_right_top .player_numbers .main_p_style {
+    float: left;
+    margin-right: 40%;
+  }
+  .create_case_modal {
+    grid-template-columns: repeat(2, 1fr) !important;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 80%;
+    position: relative;
+  }
+  .case_added_btn {
+     bottom: 20px;
+     left: 25%;
+  }
+  .cr_c_modal_stles {
+    height: 100vh;
+  }
 }
