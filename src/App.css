@@ -148,7 +148,7 @@ a {
 
   .chat_messages {
     margin-top: 0;
-    height: 97% !important;
+    height: 90% !important;
   }
   .menu-container.visible {
     right: 0 !important;
@@ -163,7 +163,7 @@ a {
   }
   .menu-container,
   .menu-container.visible {
-    transition: right 0.6s ease-in-out !important;
+    transition: right 0.3s ease-in-out !important;
   }
   .main_page_styles .page_title svg {
     display: block;

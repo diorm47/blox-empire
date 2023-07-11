@@ -380,7 +380,7 @@
     display: none;
   }
   .autocashout .df_aic_jcsb .nav_wallet_currency {
-    width: 190px;
+    width: 180px;
   }
   .bet_btn {
     width: 125px;
@@ -389,12 +389,13 @@
     font-size: 14px;
   }
   .crash_tabs button {
-    width: 170px;
+    width: 165px;
   }
   .left_crash_top {
     display: none;
   }
   .right_coefficient_blocks {
+    margin-top: 6px;
     padding: 10px;
     justify-content: space-between;
   }
@@ -409,7 +410,7 @@
     margin-top: 30px;
   }
   .right_bottom_time {
-    bottom: 10px;
+    bottom: 15px;
     padding: 0 10px;
   }
   .purple_coeff,
@@ -433,4 +434,9 @@
     font-style: normal;
     line-height: 30px;
   }
+  .total_inv .m_30 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
 }

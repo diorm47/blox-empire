@@ -9,6 +9,10 @@
   width: 625px;
   margin: 0 auto;
 }
+.plinko_page  {
+   padding-right: 0 !important;
+   padding-top: 0 !important;
+}
 
 .plinko_page .tower_game_block {
   width: 625px;

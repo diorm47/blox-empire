@@ -403,7 +403,7 @@ input:checked + .slider:before {
   }
   .create_case_battle_cards .case_battle_card {
     background: #1b1d29;
-    width: 170px;
+    width: 165px;
     margin-right: 0;
     margin-bottom: 8px;
   }
@@ -444,5 +444,19 @@ input:checked + .slider:before {
   }
   .cr_c_modal_stles {
     height: 100vh;
+  }
+  .case_list_avatars {
+    width: 120px;
+  }
+  .create_case_battle_page  .custom_page_top .m_30:first-child {
+     margin-left: 0;
+  }
+  .modal_small_cards_template .case_battle_card {
+    width: 170px;
+    height: 225px;
+    margin-right: 8px;
+  }
+  .coinflip_modal {
+    width: 100%;
   }
 }

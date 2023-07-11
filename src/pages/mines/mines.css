@@ -190,9 +190,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
+    
     margin-bottom: 25px;
     padding: 0 20px;
+    padding-top: 20px;
   }
   .mobile_top_result_item {
     display: flex;
@@ -254,4 +255,8 @@
   .mines_page .tower_wrapper {
     padding-top: 0 !important;
   }
+  .center_mines_game {
+    
+    grid-gap: 0;
+}
 }

@@ -159,6 +159,8 @@
 @media only screen and (max-width: 1710px) {
   .tower_page {
     max-width: 100% !important;
+    padding-right: 0 !important;
+    padding-top: 0 !important;
   }
 }
 
@@ -199,12 +201,13 @@
   }
   .tower_top_blocks {
     width: 100%;
-    padding-left: 45px;
-    padding-right: 45px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
   .tower_page {
     padding-top: 0 !important;
     padding-bottom: 60px;
+  
   }
   .tower_currency {
     width: 189px;
@@ -221,7 +224,7 @@
     display: none;
   }
   .tower_input_increments .input_increment {
-    width: 75px;
+    width: 70px;
   }
 
   .tower_wrapper .home_page_table_tabs {
