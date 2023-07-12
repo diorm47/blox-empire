@@ -275,7 +275,7 @@
     display: none;
   }
 
- .coinflip_modal_block .selected_value_dep {
+  .coinflip_modal_block .selected_value_dep {
     flex-direction: column-reverse;
     flex-wrap: wrap;
   }
@@ -298,7 +298,7 @@
     bottom: -13px;
     width: 100%;
   }
- .coinflip_modal_block .selected_value_dep .total_inv {
+  .coinflip_modal_block .selected_value_dep .total_inv {
     width: 100%;
     flex-direction: row-reverse;
     align-items: center;
@@ -308,11 +308,13 @@
     text-align: left;
   }
   .coinflip_modal .total_inv .m_30:nth-child(4),
-    .coinflip_modal .total_inv .vetical_gray_line:nth-child(5) {
+  .coinflip_modal .total_inv .vetical_gray_line:nth-child(5) {
     margin-left: -80px;
   }
-    .coinflip_modal .total_inv .m_30:nth-child(4) {
-      margin-left: -120px;
-    }
-
+  .coinflip_modal .total_inv .m_30:nth-child(4) {
+    margin-left: -120px;
+  }
+  .coinflip_wrapper .total_inv .m_30 {
+    margin: 0;
+  }
 }

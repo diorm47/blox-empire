@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import { ReactComponent as RouletteIcon } from "../../assets/icons/roulette-icon.svg";
 import coin_1 from "../../assets/images/roulette-carousel_items/coin-1.png";
@@ -13,11 +13,15 @@ import { ReactComponent as NoIcon } from "../../assets/icons/no-icon.svg";
 
 import table_img_1 from "../../assets/images/home-page-table/table-img-1.png";
 import { ReactComponent as Status } from "../../assets/icons/status-lvl-1.svg";
+import { ReactComponent as ArrowDown } from "../../assets/icons/arrow-down.svg";
 import HeaderTable from "../../components/header-table/header-table";
-import "../tower/tower.css"
-import "../home-page/home-page.css"
+import "../tower/tower.css";
+import "../home-page/home-page.css";
 
 function Roulette() {
+  const [tab1, setTab1] = useState(false);
+  const [tab2, setTab2] = useState(false);
+  const [tab3, setTab3] = useState(false);
   var carousel_settings = {
     dots: false,
     infinite: true,
@@ -169,7 +173,7 @@ function Roulette() {
               <p>2X</p>
               <p>BET</p>
             </div>
-            <div className="bet_total">
+            <div className={tab1 ? "bet_total" : "bet_total mob_tab_dn"}>
               <div className="total_inv">
                 <div className="m_30">
                   <p className="main_p_style">Selected</p>
@@ -187,7 +191,9 @@ function Roulette() {
                 </div>
               </div>
             </div>
-            <div className="bet_users_list">
+            <div
+              className={tab1 ? "bet_users_list" : "bet_users_list mob_tab_dn"}
+            >
               <div className="bet_users_list_item">
                 <div className="bet_user">
                   <div className="dflex_aicenter">
@@ -322,13 +328,23 @@ function Roulette() {
                 </div>
               </div>
             </div>
+            <div
+              className={
+                !tab1 ? "mobile_roul_tab" : "mobile_roul_tab reversed_btn"
+              }
+              onClick={() => setTab1(!tab1)}
+            >
+              <p>Disclose statistics</p>
+              <ArrowDown />
+            </div>
           </div>
+
           <div className="roulette_bet_block">
             <div className="roulette_bet_grade bet_green">
               <p>14X</p>
               <p>BET</p>
             </div>
-            <div className="bet_total">
+            <div className={tab2 ? "bet_total" : "bet_total mob_tab_dn"}>
               <div className="total_inv">
                 <div className="m_30">
                   <p className="main_p_style">Selected</p>
@@ -346,7 +362,9 @@ function Roulette() {
                 </div>
               </div>
             </div>
-            <div className="bet_users_list">
+            <div
+              className={tab2 ? "bet_users_list" : "bet_users_list mob_tab_dn"}
+            >
               <div className="bet_users_list_item">
                 <div className="bet_user">
                   <div className="dflex_aicenter">
@@ -480,6 +498,15 @@ function Roulette() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div
+              className={
+                !tab2 ? "mobile_roul_tab" : "mobile_roul_tab reversed_btn"
+              }
+              onClick={() => setTab2(!tab2)}
+            >
+              <p>Disclose statistics</p>
+              <ArrowDown />
             </div>
           </div>
           <div className="roulette_bet_block">
@@ -487,7 +514,7 @@ function Roulette() {
               <p>2X</p>
               <p>BET</p>
             </div>
-            <div className="bet_total">
+            <div className={tab3 ? "bet_total" : "bet_total mob_tab_dn"}>
               <div className="total_inv">
                 <div className="m_30">
                   <p className="main_p_style">Selected</p>
@@ -505,14 +532,28 @@ function Roulette() {
                 </div>
               </div>
             </div>
-            <div className="bet_users_list no_bets">
+            <div
+              className={
+                tab3
+                  ? "bet_users_list no_bets"
+                  : "bet_users_list no_bets mob_tab_dn"
+              }
+            >
               <div className="no_icon">
                 <NoIcon />
                 <p className="main_p_style">NO BETS</p>
               </div>
             </div>
+            <div
+              className={
+                !tab3 ? "mobile_roul_tab" : "mobile_roul_tab reversed_btn"
+              }
+              onClick={() => setTab3(!tab3)}
+            >
+              <p>Disclose statistics</p>
+              <ArrowDown />
+            </div>
           </div>
-        
         </div>
         <div className="pages_live_fee">
           <div className="page_title">

@@ -78,7 +78,7 @@
 }
 
 .roulette_bet_grade {
-  margin-bottom: 14px;
+
   width: 100%;
   padding: 26px 30px;
   display: flex;
@@ -103,6 +103,7 @@
   padding: 15px 19px 15px 20px;
   border-radius: 10px;
   background: #0f111d;
+  margin-top: 14px;
 }
 
 .bet_total .total_inv {
@@ -204,33 +205,65 @@
 .roulette_page .pages_live_fee {
   padding: 0;
 }
+
 @media only screen and (max-width: 700px) {
   .top_roulette_carousel_lines div:nth-child(2n) {
     display: none;
   }
- .roulette_currency {
-  width: 100%;
-  background: #1B1D29;
- }
- .roulette_currency * {
-  background: #1B1D29 ;
-  
- }
- .roulette_currency p {
-  background: transparent;
- }
- .roulette_bet_blocks {
-  flex-direction: column;
-  margin-bottom: 0;
- }
- .roulette_bet_block, .no_bets {
-  width: 100%;
-  padding: 0;
- }
- .no_bets {
-  width: 99%;
- }
- .pages_live_fee {
-  background: transparent !important;
- }
+  .roulette_currency {
+    width: 100%;
+    background: #1b1d29;
+  }
+  .roulette_currency * {
+    background: #1b1d29;
+  }
+  .roulette_currency p {
+    background: transparent;
+  }
+  .roulette_bet_blocks {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .roulette_bet_block,
+  .no_bets {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .no_bets {
+    width: 99%;
+    height: 400px;
+  }
+  .pages_live_fee {
+    background: transparent !important;
+  }
+  .mobile_roul_tab {
+    width: 100%;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 12px 12px;
+    background: var(--background-bg-dark-2, #1b1d29);
+    cursor: pointer;
+    margin-top: 5px;
+  }
+  .mobile_roul_tab p {
+    color: var(--foreground-text-message, #70717e);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    text-transform: uppercase;
+    margin-right: 17px;
+  }
+  .mob_tab_dn {
+    display: none;
+  }
+  .reversed_btn svg {
+    transform: rotate(180deg);
+  }
 }

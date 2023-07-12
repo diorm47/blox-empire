@@ -9,9 +9,9 @@
   width: 625px;
   margin: 0 auto;
 }
-.plinko_page  {
-   padding-right: 0 !important;
-   padding-top: 0 !important;
+.plinko_page {
+  padding-right: 0 !important;
+  padding-top: 0 !important;
 }
 
 .plinko_page .tower_game_block {
@@ -88,5 +88,26 @@
   }
   .plinko_page .tower_wrapper {
     background: transparent !important;
+  }
+
+  .plinko_numbers button:nth-child(7),
+  .plinko_numbers button:nth-child(8),
+  .plinko_numbers button:nth-child(9),
+  .plinko_numbers button:nth-child(10),
+  .plinko_numbers button:nth-child(11) {
+    display: none;
+  }
+  .plinko_page .tower_currency {
+    width: 60%;
+  }
+  .plinko_page .sign_submit_btn {
+    width: 35%;
+  }
+  .plinko_tree {
+    padding-top: 55px;
+    background: url(../../assets/images/plinko-mob-bg.png);
+  }
+  .plinko_page .tower_wrapper {
+    padding-top: 0;
   }
 }

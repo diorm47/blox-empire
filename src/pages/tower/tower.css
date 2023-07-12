@@ -231,4 +231,7 @@
     margin-left: 12px;
     margin-right: 12px;
   }
+  .tower_page {
+    background: transparent;
+  }
 }

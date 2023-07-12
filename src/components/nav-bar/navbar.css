@@ -54,6 +54,7 @@ nav {
 .nav_slots_live {
   display: flex;
   align-items: center;
+   margin-left: 38px;
 }
 .nav_slots_live div {
   display: flex;
