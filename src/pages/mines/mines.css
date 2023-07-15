@@ -134,7 +134,7 @@
 .mobile_top_result {
   display: none;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .pages_live_fee {
     padding: 0;
     padding-left: 12px;
@@ -169,7 +169,8 @@
     width: 100%;
   }
   .center_mines_game {
-    width: 100%;
+    width: 360px;
+    margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
   }
