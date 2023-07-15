@@ -78,7 +78,6 @@
 }
 
 .roulette_bet_grade {
-
   width: 100%;
   padding: 26px 30px;
   display: flex;
@@ -205,7 +204,39 @@
 .roulette_page .pages_live_fee {
   padding: 0;
 }
-
+.mobile_roul_tab {
+  display: none;
+}
+@media only screen and (max-width: 1240px) {
+  .roulette_bet_blocks {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .roulette_bet_block {
+    margin: 20px;
+  }
+  .roulette_page  {
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  .roulette_bet_blocks .roulette_bet_block {
+    width: 45%;
+  }
+  .roulette_currency {
+    width: 100%;
+  }
+  .roulette_bet_block {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .roulette_bet_blocks .roulette_bet_block {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 700px) {
   .top_roulette_carousel_lines div:nth-child(2n) {
     display: none;

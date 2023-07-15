@@ -270,6 +270,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 20px;
   position: relative;
 }
@@ -351,6 +352,31 @@
 .left_robox_bg {
   position: absolute;
   left: 0;
+}
+@media only screen and (max-width: 1270px) {
+  .crash_wrapper {
+    flex-direction: column-reverse;
+  
+  }
+  .crash_page, .home_page   {
+    padding-left: 20px;
+  }
+  .right_crash_column {
+    height: 700px;
+    margin-left: 0;
+  }
+
+  .left_crash_column {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+}
+@media only screen and (max-width: 960px) {
+  .right_crash_column {
+    height: 500px;
+    margin-left: 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {

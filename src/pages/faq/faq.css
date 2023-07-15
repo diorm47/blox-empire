@@ -56,7 +56,11 @@
 .faq_tabs {
   margin-bottom: 30px;
 }
-
+@media only screen and (max-width: 1270px) {
+  .faq_page {
+  padding-left: 20px;
+  }
+}
 @media only screen and (max-width: 700px) {
   .faq_page {
     padding-right: 0 !important;

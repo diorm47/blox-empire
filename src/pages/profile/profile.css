@@ -125,6 +125,11 @@
     width: 155px;
   }
 }
+@media only screen and (max-width: 1330px) {
+   .right_profile_table .profile_limiteds{
+    grid-template-columns: repeat(3, 1fr);
+   }
+} 
 
 @media only screen and (max-width: 700px) {
   .left_profile,

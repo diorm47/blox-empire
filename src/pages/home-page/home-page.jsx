@@ -50,6 +50,15 @@ function HomePage() {
           dots: true,
         },
       },
+      {
+        breakpoint: 1111,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
     ],
   };
   return (

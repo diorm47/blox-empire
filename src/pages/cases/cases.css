@@ -368,6 +368,11 @@ input:checked + .slider:before {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 1270px) {
+.cases_page, .profile_page   {
+  padding-left: 20px;
+}
+}
 @media only screen and (max-width: 700px) {
   .custom_page_top .sign_submit_btn {
     width: 100% !important;

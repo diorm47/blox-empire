@@ -48,6 +48,26 @@
     grid-template-columns: repeat(5, 1fr);
   }
 }
+@media only screen and (max-width: 1300px) {
+  .earn_cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .earn_page  {
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .earn_cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .earn_cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 .earn_card_item {
   width: 226px;
@@ -94,6 +114,9 @@
 @media only screen and (max-width: 700px) {
   .earn_wrapper .page_title p {
     display: none;
+  }
+  .earn_page  {
+    padding-left: 0px;
   }
   .earn_header_bg {
     padding: 20px;

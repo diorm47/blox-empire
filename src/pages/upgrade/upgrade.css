@@ -233,7 +233,7 @@
   font-family: HalvarBreitschrift;
   font-size: 12px;
   font-style: normal;
-  
+
   line-height: normal;
   text-transform: uppercase;
   cursor: pointer;
@@ -269,14 +269,24 @@
 .upgrade_modal {
   z-index: 1111;
 }
-.mob_upgrade_top, .mob_bottom_analyzes {
+.mob_upgrade_top,
+.mob_bottom_analyzes {
   display: none;
 }
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1300px) {
   .left_upgrade_cards {
     display: none;
   }
+  .top_upgrade_title h2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .left_upgrade_cards {
+    display: none;
+  }
+
   .top_upgrade_title h2 {
     display: none;
   }
@@ -290,7 +300,8 @@
   .bottom_upgrade {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 20px;
     flex-direction: column;
   }
@@ -334,7 +345,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 120%;
+    margin-bottom: 50%;
   }
   .mob_top_item {
     position: static;
@@ -347,7 +358,7 @@
     left: 0px;
     right: 0px;
     width: 100%;
-  } 
+  }
   .mob_upgrade_bottom_item svg {
     top: 200px;
   }
@@ -361,9 +372,43 @@
     display: block;
   }
   .mob_bottom_analyzes .bottom_analyze:first-child {
-   text-align: left;
+    text-align: left;
   }
   .mob_bottom_analyzes .bottom_analyze:last-child {
     text-align: right;
-   }
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .mob_upgrade_top_item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60%;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .mob_upgrade_top_item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .mob_upgrade_top_item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 120%;
+  }
+  .bottom_upgrade {
+   padding-left: 0;
+   padding-right: 0;
+  }
 }

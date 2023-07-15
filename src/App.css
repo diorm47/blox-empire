@@ -113,11 +113,31 @@ a {
   .home_page_carousel {
     margin-top: 10px !important;
   }
+
+}
+@media only screen and (max-width: 1450px) {
+  .mobile_bottom_navigation {
+    display: flex;
+  }
+  .chat_button {
+    display: none;
+  }
+  .m_content_center {
+    width: 100%;
+}
 }
 .main_page_styles .page_title svg {
   display: none;
 }
-
+@media only screen and (max-width: 1270px) {
+  .main_content_wrapper {
+    padding-left: 0;
+  }
+  .pages_live_fee {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}
 @media only screen and (max-width: 700px) {
   .main_content_wrapper {
     margin: 0;
@@ -129,14 +149,15 @@ a {
   .m_content_center,
   .main_content_block {
     width: 100%;
-    padding: 0 12px;
+    padding: 0 12px !important;
   }
+  .main_content_block .main_page_styles {
+    padding-left: 0 !important;
+  } 
   .page_title {
     margin-bottom: 15px;
   }
-  .chat_button {
-    display: none;
-  }
+
   .menu-container {
     top: -10px !important;
     right: -1000px !important;
@@ -155,9 +176,7 @@ a {
     z-index: 1111 !important;
     position: fixed;
   }
-  .mobile_bottom_navigation {
-    display: flex;
-  }
+
   .chat_right_chevron {
     margin-left: 2px !important;
   }
