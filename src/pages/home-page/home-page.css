@@ -65,7 +65,9 @@
 .header_mobile_cards {
   display: none;
 }
-
+.crash_page, .home_page   {
+  padding-left: 20px;
+}
 @media only screen and (max-width: 640px) {
   .home_page_carousel {
     display: none;
