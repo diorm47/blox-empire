@@ -219,7 +219,7 @@ function ProfileTable({ tableType }) {
                     <p className="table_main_text_styles">{item.time}</p>
                   </td>
 
-                  <td>
+                  <td className="border_radius_table">
                     <div className="dflex_aicenter">
                       <RsCurrencyLogo className="mr_12px" />
                       <p className="table_main_text_styles">
@@ -310,7 +310,7 @@ function ProfileTable({ tableType }) {
                     </div>
                   </td>
                   {item.deposit_status === "Transaction" ? (
-                    <td>
+                    <td className="border_radius_table">
                       <div className="dflex_aicenter transaction_status">
                         <LoadingIcon className="mr_12px" />
                         <p className="table_main_text_styles">
@@ -322,7 +322,7 @@ function ProfileTable({ tableType }) {
                     ""
                   )}
                   {item.deposit_status === "Successfully" ? (
-                    <td>
+                    <td className="border_radius_table">
                       <div className="dflex_aicenter successfully_status">
                         <CheckedIcon className="mr_12px" />
                         <p className="table_main_text_styles">
@@ -334,7 +334,7 @@ function ProfileTable({ tableType }) {
                     ""
                   )}
                   {item.deposit_status === "Rejected" ? (
-                    <td>
+                    <td className="border_radius_table">
                       <div className="dflex_aicenter rejected_status">
                         <img
                           src={rejected_icon}

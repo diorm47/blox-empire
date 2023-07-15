@@ -46,6 +46,10 @@ table thead {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
 }
+.colored_item {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
 .br_left p,
 .header_table span {
   color: #70717e;

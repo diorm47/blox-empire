@@ -113,7 +113,9 @@ a {
   .home_page_carousel {
     margin-top: 10px !important;
   }
-
+}
+.m_content_center {
+  padding-bottom: 50px;
 }
 @media only screen and (max-width: 1450px) {
   .mobile_bottom_navigation {
@@ -124,7 +126,14 @@ a {
   }
   .m_content_center {
     width: 100%;
-}
+  }
+  .m_content_center {
+    padding-bottom: 100px;
+  }
+  .tower_page,
+  .upgrade_wrapper {
+    padding-bottom: 70px;
+  }
 }
 .main_page_styles .page_title svg {
   display: none;
@@ -137,7 +146,15 @@ a {
     margin-left: 20px !important;
     margin-right: 20px !important;
   }
+  .coinflip_page {
+    padding-left: 20px;
 }
+}
+.pages_live_fee,
+.home_page_table {
+  margin-bottom: 0px;
+}
+
 @media only screen and (max-width: 700px) {
   .main_content_wrapper {
     margin: 0;
@@ -153,7 +170,7 @@ a {
   }
   .main_content_block .main_page_styles {
     padding-left: 0 !important;
-  } 
+  }
   .page_title {
     margin-bottom: 15px;
   }
@@ -193,7 +210,6 @@ a {
     align-items: center;
   }
   .chat_messages {
-    
     padding: 0 12px !important;
   }
 }
