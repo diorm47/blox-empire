@@ -254,6 +254,7 @@
 
 .padding_0 {
   padding: 0 !important;
+  padding-right: 20px !important;
   background: #1b1d29;
   margin-top: 50px !important;
 }
@@ -369,6 +370,9 @@
   .left_crash_column {
     margin: 0 auto;
     margin-top: 30px;
+  }
+  .padding_0 {
+    padding-right: 0 !important;
   }
 
 }
