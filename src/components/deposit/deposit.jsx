@@ -23,6 +23,7 @@ import limited_3 from "../../assets/images/limited/limited-3.png";
 import limited_4 from "../../assets/images/limited/limited-4.png";
 import limited_5 from "../../assets/images/limited/limited-5.png";
 import limited_6 from "../../assets/images/limited/limited-6.png";
+
 import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency.svg";
 
 function Deposit({ toggleDeposit }) {

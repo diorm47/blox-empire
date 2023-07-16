@@ -13,7 +13,7 @@ import { ReactComponent as Btm } from "../../assets/icons/card-item-btm.svg";
 import coinflip_ava_1 from "../../assets/icons/coinflip-icons/coinflip-1.png";
 import coinflip_ava_2 from "../../assets/icons/coinflip-icons/coinflip-2.png";
 import coin_1 from "../../assets/images/roulette-carousel_items/coin-1.png";
-import coin_2 from "../../assets/images/roulette-carousel_items/coin-2.png";
+import coin_2 from "../../assets/images/roulette-carousel_items/coin-3.png";
 import { ReactComponent as CoinflipStatus1 } from "../../assets/icons/coinflip-icons/coinflip-status-1.svg";
 import { ReactComponent as CoinflipStatus2 } from "../../assets/icons/coinflip-icons/coinflip-status-2.svg";
 import { ReactComponent as CoinflipModal } from "../../assets/icons/coinflip_modal.svg";
