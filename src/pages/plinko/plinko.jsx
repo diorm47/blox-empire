@@ -2,10 +2,13 @@ import React from "react";
 import "../tower/tower.css";
 import { ReactComponent as RsCurrencyLogo } from "../../assets/icons/rs-currency.svg";
 import { ReactComponent as PlinkoTree } from "../../assets/icons/plinko-tree.svg";
+import { ReactComponent as PlinkoTreeBottom } from "../../assets/icons/plinko-tree-bottom.svg";
+import { ReactComponent as PlinkoDot } from "../../assets/icons/plinko-dots.svg";
 import "../../components/sign-in/sign-in.css";
 import "../home-page/home-page.css";
 import "./plinko.css";
 import HeaderTable from "../../components/header-table/header-table";
+
 function Plinko({ isMenuVisible }) {
   return (
     <>
@@ -18,7 +21,121 @@ function Plinko({ isMenuVisible }) {
       >
         <div className="tower_wrapper">
           <div className="plinko_tree">
-            <PlinkoTree />
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot />
+              <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot />
+              <PlinkoDot />
+              <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot />
+              <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot />
+              <PlinkoDot />
+              <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot />
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+            </div>
+            <div>
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot />
+              <PlinkoDot />
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+              <PlinkoDot /> <PlinkoDot /> <PlinkoDot /> <PlinkoDot />
+            </div>
+            <div className="plinko_tree_bottom_icons">
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+              <div>
+                <PlinkoTreeBottom />
+                <p>x172</p>
+              </div>
+            </div>
           </div>
           <div className="tower_game_block">
             <div className="t_curr_start">

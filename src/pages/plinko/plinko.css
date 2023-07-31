@@ -9,13 +9,64 @@
   width: 625px;
   margin: 0 auto;
 }
+.plinko_tree div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plinko_tree div svg {
+  margin: 0 17.5px;
+  margin-bottom: 35px;
+}
+.plinko_tree div svg:first-child {
+  margin-left: 0;
+}
+.plinko_tree div svg:last-child {
+  margin-right: 0;
+}
+.plinko_tree div:last-child svg {
+  margin-bottom: 0;
+}
+.plinko_tree_bottom_icons {
+  width: 100% !important;
+  margin-top: -15px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+.plinko_tree_bottom_icons div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plinko_tree_bottom_icons div svg {
+  margin: 0;
+}
+.plinko_tree_bottom_icons div p {
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+
+  /* Description/Description */
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+
+  line-height: 18px; /* 138.462% */
+}
 .plinko_page {
   padding-right: 0 !important;
   padding-top: 0 !important;
 }
 
 .plinko_page .tower_game_block {
-  width: 625px;
+  width: 670px;
 }
 .plinko_page .tower_currency {
   width: 435px;
@@ -24,7 +75,7 @@
   width: 100%;
 }
 .plinko_page .sign_submit_btn {
-  width: 135px;
+  width: 185x;
   margin-bottom: 0;
   font-size: 16px;
 }
@@ -77,11 +128,7 @@
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
   }
-  .plinko_tree svg {
-    width: 90%;
-    margin: 0 auto;
-    height: auto;
-  }
+
   .plinko_page .tower_game_block {
     width: 100%;
     margin-top: 12px;
